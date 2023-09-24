@@ -1,32 +1,22 @@
 <img src="./04 - Outros/assets/img/readme/Capa.png" width="100%">
 
+​	Olá pessoal, meu nome é **Alessandro C. Santos**, tenho **23 anos** e estou adentrando na carreira de **desenvolvedor FullStack e designer**, estou me graduando em **Sistema de Informação** no Instituto Federal do Espírito Santo - Campus Cachoeiro de Itapemirim, atualmente **trabalho a mais de 1 ano** na Captar Consultoria Pública,  onde se destaca na **análise, desenvolvimento, manutenção e inovação de produtos internos**, consolidando sua posição como uma empresa líder na prestação de serviços de assistência social para municípios e Estados em todo o Brasil. **Estagiei** na prefeitura municipal de Cachoeiro de Itapemirim **por 1 ano**. Sempre fui aficionado por tecnologia, tenho muito a trilhar, mas já dei meus primeiros passos e construirei uma grande carreira pela frente. 
 
-
-
-
-## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40px">Sobre min
-
-
-
-Olá pessoal, meu nome é Alessandro C. Santos e estou adentrando na carreira de desenvolvedor FullStack e designer, estou me graduando em Sistema de Informação no Instituto Federal do Espírito Santo - Campus Cachoeiro de Itapemirim, atualmente trabalho a mais de 1 ano na Captar Consultoria Pública,  onde se destaca na análise, desenvolvimento, manutenção e inovação de produtos internos, consolidando sua posição como uma empresa líder na prestação de serviços de assistência social para municípios e Estados em todo o Brasil. A especialização da empresa está na entrega de soluções voltadas para captação de recursos e desenvolvimento de softwares de gestão do SUAS, com um enfoque primordial em atender Órgãos Públicos Federais, Estaduais e Municipais, além de empresas privadas e entidades sem fins lucrativos. 
-
-Tenho uma atuação consolidada como desenvolvedor pleno na empresa, englobando desde a concepção e implementação de interfaces, do back-end ao front-end, até a administração de bancos de dados. Além disso, desempenho um papel vital na manutenção de servidores e demais serviços hospedados na AWS.
-
-Como parte integrante da equipe, também me destaco no treinamento de novos membros, na resolução ágil de bugs e no suporte técnico, garantindo a eficácia operacional dos projetos. Em momentos críticos, já assumi liderança da equipe de programação, orientando decisões e impulsionando resultados.
-
-Essa abordagem abrangente e proativa no ciclo de desenvolvimento reflete meu compromisso em proporcionar soluções robustas e de alta qualidade. Estou sempre pronto para enfrentar desafios e garantir o sucesso dos projetos em que estou envolvido.
-
-Minha trajetória inclui uma experiência enriquecedora como estagiário na Prefeitura Municipal de Cachoeiro de Itapemirim - ES, onde tive a oportunidade e a liberdade para desenvolver sistemas essenciais para a cidade. Abaixo, destaco alguns dos sistemas que tive o privilégio de contribuir;
-
-Ao longo desse percurso, adquiri conhecimentos sólidos e estou em constante busca por aprimoramento. A curto prazo, tenho como meta consolidar habilidades que listei abaixo. Estou atualmente investindo em uma série de cursos na área, visando ampliar meu escopo de competências.
-
-Além disso, acumulei experiência relevante ao atuar como freelancer na área de design. Esta experiência proporcionou uma visão holística do processo de desenvolvimento, reforçando minha capacidade de entrega de soluções criativas e funcionais.
-
-Atualmente, estou em fase de organização do meu perfil no LinkedIn, migrando diversos projetos para o GitHub (anteriormente utilizava o GitLab) e trabalhando na criação do meu site pessoal. Estou focado em participar de diversos mini cursos e Bootcamp, aproveitando ao máximo das minhas experiencias. 
-
-Participar deste BootCamp foi um desafio pessoal, uma oportunidade de romper com meus métodos de estudo convencionais. Sou metódico e prezo pela minuciosidade na organização e registro de cada detalhe, o que, embora eficaz, pode demandar tempo e paciência. Minha habilidade de aprendizado rápido, especialmente em disciplinas de exatas, é uma característica que valorizo. No entanto, reconheço a importância de manter em mente os detalhes ao longo do tempo, e por isso mantenho o hábito de anotar tudo. Nos finais de semana, revisito conteúdos de forma aleatória, o que tem se mostrado eficaz.
-
-A participação no BootCamp impôs um novo ritmo e a necessidade de desenvolver métodos de estudo mais ágeis e eficientes, saindo da minha zona de conforto e adotando abordagens mais dinâmicas para o desenvolvimento de projetos dentro de prazos determinados.
+<details style="background-color:black; color:white; padding:10px;">
+    <summary><img src="https://media4.giphy.com/media/CaiVJuZGvR8HK/giphy.gif?cid=ecf05e47tjwe79blptzrecdr6ix7q4okmb6u4jomg7vwp5b4&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="40px"> Mais sobre mim</summary>
+    <div style="padding:10px;text-align:left">
+     	<p>  A especialização da empresa onde eu trabalho está na entrega de soluções voltadas para captação de recursos e desenvolvimento de softwares de gestão do SUAS, com um enfoque primordial em atender Órgãos Públicos Federais, Estaduais e Municipais, além de empresas privadas e entidades sem fins lucrativos. </p>
+          <p> Tenho uma atuação consolidada como desenvolvedor pleno na empresa, englobando desde a concepção e implementação de interfaces, do back-end ao front-end, até a administração de bancos de dados. Além disso, desempenho um papel vital na manutenção de servidores e demais serviços hospedados na AWS.</p>
+          <p> Como parte integrante da equipe, também me destaco no treinamento de novos membros, na resolução ágil de bugs e no suporte técnico, garantindo a eficácia operacional dos projetos. Em momentos críticos, já assumi liderança da equipe de programação, orientando decisões e impulsionando resultados. </p>
+         <p> Essa abordagem abrangente e proativa no ciclo de desenvolvimento reflete meu compromisso em proporcionar soluções robustas e de alta qualidade. Estou sempre pronto para enfrentar desafios e garantir o sucesso dos projetos em que estou envolvido. </p>
+         <p> Minha trajetória inclui uma experiência enriquecedora como estagiário na Prefeitura Municipal de Cachoeiro de Itapemirim - ES, onde tive a oportunidade e a liberdade para desenvolver sistemas essenciais para a cidade. Abaixo, destaco alguns dos sistemas que tive o privilégio de contribuir.</p>
+         <p> Ao longo desse percurso, adquiri conhecimentos sólidos e estou em constante busca por aprimoramento. A curto prazo, tenho como meta consolidar habilidades que listei abaixo. Estou atualmente investindo em uma série de cursos na área, visando ampliar meu escopo de competências. </p>
+         <p> Além disso, acumulei experiência relevante ao atuar como freelancer na área de design. Esta experiência proporcionou uma visão holística do processo de desenvolvimento, reforçando minha capacidade de entrega de soluções criativas e funcionais.</p>
+         <p> Atualmente, estou em fase de organização do meu perfil no LinkedIn, migrando diversos projetos para o GitHub (anteriormente utilizava o GitLab) e trabalhando na criação do meu site pessoal. Estou focado em participar de diversos mini cursos e Bootcamp, aproveitando ao máximo das minhas experiencias. </p>
+         <p> Participar deste BootCamp foi um desafio pessoal, uma oportunidade de romper com meus métodos de estudo convencionais. Sou metódico e prezo pela minuciosidade na organização e registro de cada detalhe, o que, embora eficaz, pode demandar tempo e paciência. Minha habilidade de aprendizado rápido, especialmente em disciplinas de exatas, é uma característica que valorizo. No entanto, reconheço a importância de manter em mente os detalhes ao longo do tempo, e por isso mantenho o hábito de anotar tudo. Nos finais de semana, revisito conteúdos de forma aleatória, o que tem se mostrado eficaz.</p>
+         <p> A participação no BootCamp impôs um novo ritmo e a necessidade de desenvolver métodos de estudo mais ágeis e eficientes, saindo da minha zona de conforto e adotando abordagens mais dinâmicas para o desenvolvimento de projetos dentro de prazos determinados.</p>
+    </div>
+</details>
 
 -----
 
