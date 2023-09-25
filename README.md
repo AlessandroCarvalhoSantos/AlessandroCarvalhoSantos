@@ -67,7 +67,7 @@
 <img width="100%" src="https://github-readme-streak-stats.herokuapp.com?user=AlessandroCarvalhoSantos&theme=dark&locale=pt_BR" />
 
 <div style="align:center">
-      <img width="64%" src="https://github-readme-stats.vercel.app/api?username=AlessandroCarvalhoSantos&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&show_icons=true&theme=dark#gh-dark-mode-only" />
+      <img width="64%" src="https://github-readme-stats.vercel.app/api?username=AlessandroCarvalhoSantos&count_private=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&show_icons=true&theme=dark#gh-dark-mode-only" />
       <img width="35%" src="https://github-readme-stats.vercel.app/api/top-langs?username=AlessandroCarvalhoSantos&layout=pie&show_icons=true&theme=dark#gh-dark-mode-only" />
 </div>
 
