@@ -65,10 +65,11 @@
 
 
 
+<img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=AlessandroCarvalhoSantos&theme=theme=dark&hide_border=false" />
 
-<picture>
-  <img width="100%" src="https://github-readme-stats.vercel.app/api?username=AlessandroCarvalhoSantos&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&show_icons=true&theme=dark#gh-dark-mode-only" />
-</picture>
+<img width="100%" src="https://github-readme-stats.vercel.app/api?username=AlessandroCarvalhoSantos&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&show_icons=true&theme=dark#gh-dark-mode-only" />
+
+<img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AlessandroCarvalhoSantos&layout=compact" />
 
 :computer:Sistemas em que trabalho atualmente juntos a outros programadores
 
