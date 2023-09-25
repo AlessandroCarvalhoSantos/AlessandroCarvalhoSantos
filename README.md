@@ -63,6 +63,17 @@
 
 ------
 
+
+
+
+<picture>
+  <source
+    srcset="https://github-readme-stats.vercel.app/api?username=AlessandroCarvalhoSantos&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&show_icons=true&theme=dark#gh-dark-mode-only""
+    media="(prefers-color-scheme: dark)"
+  />
+  <img width="100%" src="https://github-readme-stats.vercel.app/api?username=AlessandroCarvalhoSantos&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&show_icons=true&theme=dark#gh-dark-mode-only" />
+</picture>
+
 :computer:Sistemas em que trabalho atualmente juntos a outros programadores
 
 O Sistema Único de Assistência Social (SUAS) é uma política pública implementada no Brasil para promover e garantir o acesso aos direitos sociais de cidadania, especialmente aqueles em situação de vulnerabilidade e risco social. Ele é coordenado pelo Ministério da Cidadania e executado em parceria com estados, municípios e o Distrito Federal.
