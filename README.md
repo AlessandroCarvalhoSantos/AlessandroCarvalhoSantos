@@ -4,6 +4,8 @@
 
 :pushpin: Especializando no ecossistema .NET
 
+<hr>
+
 <details style="background-color:black; color:white; padding:10px;">
     <summary> Mais sobre mim</summary>
     <div style="padding:10px;text-align:left">
@@ -62,15 +64,15 @@
 - Flexibilidade e capacidade de se adaptar a mudanças 
 
 ------
-
-
-
 <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=AlessandroCarvalhoSantos&theme=theme=dark&hide_border=false" />
 
-<img width="100%" src="https://github-readme-stats.vercel.app/api?username=AlessandroCarvalhoSantos&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&show_icons=true&theme=dark#gh-dark-mode-only" />
+<div style="align:center">
+      <img width="64%" src="https://github-readme-stats.vercel.app/api?username=AlessandroCarvalhoSantos&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&show_icons=true&theme=dark#gh-dark-mode-only" />
+      <img width="35%" src="https://github-readme-stats.vercel.app/api/top-langs?username=AlessandroCarvalhoSantos&layout=pie" />
+</div>
 
-<img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AlessandroCarvalhoSantos&layout=compact" />
 
+<hr>
 
 <details style="background-color:black; color:white; padding:10px;">
     <summary> Mais sobre meus trabalhos </summary>
@@ -201,6 +203,7 @@ Nos estados do Espírito Santo e Bahia, o SUAS desempenha um papel fundamental n
 </div>
 </details>
 
+<hr>
 
 :ledger: Bom, se você chegou ate aqui é que você se interessou pelo meu perfil, agradeço por ter lido e abaixo tenho algumas formas de entrar em contato caso tenha interesse para algum trabalho profissional, fique a vontade!
 
