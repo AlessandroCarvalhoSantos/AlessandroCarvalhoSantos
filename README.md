@@ -71,6 +71,11 @@
 
 <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AlessandroCarvalhoSantos&layout=compact" />
 
+
+<details style="background-color:black; color:white; padding:10px;">
+    <summary> Mais sobre meus trabalhos </summary>
+    <div style="padding:10px;text-align:left">
+        
 :computer:Sistemas em que trabalho atualmente juntos a outros programadores
 
 O Sistema Único de Assistência Social (SUAS) é uma política pública implementada no Brasil para promover e garantir o acesso aos direitos sociais de cidadania, especialmente aqueles em situação de vulnerabilidade e risco social. Ele é coordenado pelo Ministério da Cidadania e executado em parceria com estados, municípios e o Distrito Federal.
@@ -193,6 +198,8 @@ Nos estados do Espírito Santo e Bahia, o SUAS desempenha um papel fundamental n
     </div>
 </details>
 
+</div>
+</details>
 
 
 :ledger: Bom, se você chegou ate aqui é que você se interessou pelo meu perfil, agradeço por ter lido e abaixo tenho algumas formas de entrar em contato caso tenha interesse para algum trabalho profissional, fique a vontade!
