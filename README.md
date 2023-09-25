@@ -1,9 +1,11 @@
 <img src="./04 - Outros/assets/img/readme/Capa.png" width="100%">
 
-​	Olá pessoal, meu nome é **Alessandro C. Santos**, tenho **23 anos** e estou adentrando na carreira de **desenvolvedor FullStack e designer**, estou me graduando em **Sistema de Informação** no Instituto Federal do Espírito Santo - Campus Cachoeiro de Itapemirim, atualmente **trabalho a mais de 1 ano** na Captar Consultoria Pública,  onde se destaca na **análise, desenvolvimento, manutenção e inovação de produtos internos**, consolidando sua posição como uma empresa líder na prestação de serviços de assistência social para municípios e Estados em todo o Brasil. **Estagiei** na prefeitura municipal de Cachoeiro de Itapemirim **por 1 ano**. Sempre fui aficionado por tecnologia, tenho muito a trilhar, mas já dei meus primeiros passos e construirei uma grande carreira pela frente. 
+​			Olá pessoal, meu nome é **Alessandro C. Santos**, tenho **23 anos** e estou adentrando na carreira de **desenvolvedor FullStack e designer**, estou me graduando em **Sistema de Informação** no Instituto Federal do Espírito Santo - Campus Cachoeiro de Itapemirim, atualmente **trabalho a mais de 1 ano** na Captar Consultoria Pública,  onde se destaca na **análise, desenvolvimento, manutenção e inovação de produtos internos**, consolidando sua posição como uma empresa líder na prestação de serviços de assistência social para municípios e Estados em todo o Brasil. **Estagiei** na prefeitura municipal de Cachoeiro de Itapemirim **por 1 ano**. Sempre fui aficionado por tecnologia, tenho muito a trilhar, mas já dei meus primeiros passos e construirei uma grande carreira pela frente. 
+
+:pushpin: Especializando no ecossistema .NET
 
 <details style="background-color:black; color:white; padding:10px;">
-    <summary><img src="https://media4.giphy.com/media/CaiVJuZGvR8HK/giphy.gif?cid=ecf05e47tjwe79blptzrecdr6ix7q4okmb6u4jomg7vwp5b4&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="40px"> Mais sobre mim</summary>
+    <summary> Mais sobre mim</summary>
     <div style="padding:10px;text-align:left">
      	<p>  A especialização da empresa onde eu trabalho está na entrega de soluções voltadas para captação de recursos e desenvolvimento de softwares de gestão do SUAS, com um enfoque primordial em atender Órgãos Públicos Federais, Estaduais e Municipais, além de empresas privadas e entidades sem fins lucrativos. </p>
           <p> Tenho uma atuação consolidada como desenvolvedor pleno na empresa, englobando desde a concepção e implementação de interfaces, do back-end ao front-end, até a administração de bancos de dados. Além disso, desempenho um papel vital na manutenção de servidores e demais serviços hospedados na AWS.</p>
@@ -18,26 +20,15 @@
     </div>
 </details>
 
------
+------
 
-##### :pushpin:Minhas habilidades
+## **[🌐 Minhas Redes:](hhttps://github.com/AlessandroCarvalhoSantos#minhas-habilidades#-minhas-redes)**
 
-- Fácil aprendizagem
-- Autonomia
-- Paciência
-- Criatividade 
-- Comprometimento
-- Flexibilidade e capacidade de se adaptar a mudanças 
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/alessandroc_santos/)[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](www.linkedin.com/in/alessandrocarvalhosantos)[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/alessandroc.santos)
 
-----
+------
 
-
-
----
-
-##### :heavy_check_mark:Tecnologias que tenho conhecimento
-
-:blue_book:Maiores conhecimentos:
+##### :heavy_check_mark:Tecnologias que tenho maior conhecimento
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"><img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"><img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"><img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
@@ -55,15 +46,22 @@
 
 <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"><img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white">![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-----
+:dart: Outras ferramentas que tenho conhecimento:
 
-##### :dart:Tecnologias que pretendo estudar a médio e longo prazo
-
-<img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white"><img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge"><img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-
-<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"><img src="https://img.shields.io/badge/Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white">![Xamarin](https://img.shields.io/badge/Xamarin-3199DC?style=for-the-badge&logo=xamarin&logoColor=white)
+![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)
 
 ----
+
+##### :pushpin:Minhas habilidades
+
+- Fácil aprendizagem
+- Autonomia
+- Paciência
+- Criatividade 
+- Comprometimento
+- Flexibilidade e capacidade de se adaptar a mudanças 
+
+------
 
 :computer:Sistemas em que trabalho atualmente juntos a outros programadores
 
