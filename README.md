@@ -2,11 +2,13 @@
 
 ​			Olá pessoal, meu nome é **Alessandro C. Santos**, tenho **23 anos** e estou adentrando na carreira de **desenvolvedor FullStack e designer**, estou me graduando em **Sistema de Informação** no Instituto Federal do Espírito Santo - Campus Cachoeiro de Itapemirim, atualmente **trabalho a mais de 1 ano** na Captar Consultoria Pública,  onde se destaca na **análise, desenvolvimento, manutenção e inovação de produtos internos**, consolidando sua posição como uma empresa líder na prestação de serviços de assistência social para municípios e Estados em todo o Brasil. **Estagiei** na prefeitura municipal de Cachoeiro de Itapemirim **por 1 ano**. Sempre fui aficionado por tecnologia, tenho muito a trilhar, mas já dei meus primeiros passos e construirei uma grande carreira pela frente. 
 
-:pushpin: Especializando no ecossistema .NET
+:pushpin: Atualmente se Especializando no ecossistema .NET e AWS
+
+<hr>
 
 <details style="background-color:black; color:white; padding:10px;">
     <summary> Mais sobre mim</summary>
-    <div style="padding:10px;text-align:left">
+    <div style="padding:10px;text-align:left"> <br>
      	<p>  A especialização da empresa onde eu trabalho está na entrega de soluções voltadas para captação de recursos e desenvolvimento de softwares de gestão do SUAS, com um enfoque primordial em atender Órgãos Públicos Federais, Estaduais e Municipais, além de empresas privadas e entidades sem fins lucrativos. </p>
           <p> Tenho uma atuação consolidada como desenvolvedor pleno na empresa, englobando desde a concepção e implementação de interfaces, do back-end ao front-end, até a administração de bancos de dados. Além disso, desempenho um papel vital na manutenção de servidores e demais serviços hospedados na AWS.</p>
           <p> Como parte integrante da equipe, também me destaco no treinamento de novos membros, na resolução ágil de bugs e no suporte técnico, garantindo a eficácia operacional dos projetos. Em momentos críticos, já assumi liderança da equipe de programação, orientando decisões e impulsionando resultados. </p>
@@ -62,20 +64,19 @@
 - Flexibilidade e capacidade de se adaptar a mudanças 
 
 ------
+<img width="100%" src="https://github-readme-streak-stats.herokuapp.com?user=AlessandroCarvalhoSantos&theme=dark&locale=pt_BR" />
 
+<div style="align:center">
+      <img width="64%" src="https://github-readme-stats.vercel.app/api?username=AlessandroCarvalhoSantos&count_private=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&show_icons=true&theme=dark#gh-dark-mode-only" />
+      <img width="35%" src="https://github-readme-stats.vercel.app/api/top-langs?username=AlessandroCarvalhoSantos&layout=pie&show_icons=true&theme=dark#gh-dark-mode-only" />
+</div>
 
-
-<img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=AlessandroCarvalhoSantos&theme=theme=dark&hide_border=false" />
-
-<img width="100%" src="https://github-readme-stats.vercel.app/api?username=AlessandroCarvalhoSantos&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&show_icons=true&theme=dark#gh-dark-mode-only" />
-
-<img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AlessandroCarvalhoSantos&layout=compact" />
-
+<hr>
 
 <details style="background-color:black; color:white; padding:10px;">
     <summary> Mais sobre meus trabalhos </summary>
     <div style="padding:10px;text-align:left">
-        
+        <br>
 :computer:Sistemas em que trabalho atualmente juntos a outros programadores
 
 O Sistema Único de Assistência Social (SUAS) é uma política pública implementada no Brasil para promover e garantir o acesso aos direitos sociais de cidadania, especialmente aqueles em situação de vulnerabilidade e risco social. Ele é coordenado pelo Ministério da Cidadania e executado em parceria com estados, municípios e o Distrito Federal.
@@ -201,6 +202,7 @@ Nos estados do Espírito Santo e Bahia, o SUAS desempenha um papel fundamental n
 </div>
 </details>
 
+<hr>
 
 :ledger: Bom, se você chegou ate aqui é que você se interessou pelo meu perfil, agradeço por ter lido e abaixo tenho algumas formas de entrar em contato caso tenha interesse para algum trabalho profissional, fique a vontade!
 
