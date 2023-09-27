@@ -1,0 +1,21 @@
+Fundamentos em C#
+
+Instituição: BALTA
+Carga horaria: 16.4 horas
+Data: 15/09/2023
+
+Principais pontos do curso:
+	- Linguagens e Compiladores
+	- Frameworks
+	- .NET
+	- Linguagem de Programação com C#
+	- Mão na massa: Criando uma calculadora
+	- Mão na massa: Cronômetro
+	- Mão na massa: Editor de Textos
+	- Strings
+	- Mão na massa: Editor HTML
+	- Datas
+	- Moedas
+	- Arrays
+	- Exceptions
+	- Conclusão
