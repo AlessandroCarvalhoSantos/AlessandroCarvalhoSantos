@@ -9,6 +9,7 @@ class Program
         Soma();
         Subtracao();
         Divisao();
+        Multiplicacao();
     }
 
     static void Soma(){
@@ -65,4 +66,23 @@ class Program
         Console.WriteLine($"O resultado da divisão é {resultado}");
         Console.ReadKey();
     }
+
+    static void Multiplicacao()
+    {
+        Console.Clear();
+
+        Console.WriteLine("Primeiro número:");
+        float v1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine("Segundo número:");
+        float v2 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine("");
+
+        float resultado = v1 * v2;
+        Console.WriteLine($"O resultado da multiplicação é {resultado}");
+
+        Console.ReadKey();
+    }
+
 }
