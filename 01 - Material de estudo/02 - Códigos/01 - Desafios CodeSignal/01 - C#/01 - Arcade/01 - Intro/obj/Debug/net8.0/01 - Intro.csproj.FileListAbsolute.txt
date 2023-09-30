@@ -1,0 +1,15 @@
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\obj\Debug\net8.0\01 - Intro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\obj\Debug\net8.0\01 - Intro.AssemblyInfoInputs.cache
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\obj\Debug\net8.0\01 - Intro.AssemblyInfo.cs
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\obj\Debug\net8.0\01 - Intro.csproj.CoreCompileInputs.cache
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\obj\Debug\net8.0\01 - Intro.sourcelink.json
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\bin\Debug\net8.0\01 - Intro.exe
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\bin\Debug\net8.0\01 - Intro.deps.json
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\bin\Debug\net8.0\01 - Intro.runtimeconfig.json
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\bin\Debug\net8.0\01 - Intro.dll
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\bin\Debug\net8.0\01 - Intro.pdb
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\obj\Debug\net8.0\01 - Intro.dll
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\obj\Debug\net8.0\refint\01 - Intro.dll
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\obj\Debug\net8.0\01 - Intro.pdb
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\obj\Debug\net8.0\01 - Intro.genruntimeconfig.cache
+C:\Users\Alessandro\Desktop\Repositórios\AlessandroCarvalhoSantos\01 - Material de estudo\02 - Códigos\01 - Desafios CodeSignal\01 - C#\01 - Arcade\01 - Intro\obj\Debug\net8.0\ref\01 - Intro.dll
