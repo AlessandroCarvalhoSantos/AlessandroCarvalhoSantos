@@ -1416,5 +1416,259 @@ class Program
 
         Console.WriteLine(Console.ReadKey());
     }
-}</code></pre></li></ul></details></li></ul><ul id="9809330b-f4de-487d-a81f-12d850d8a1a2" class="toggle"><li><details open=""><summary>Divisão</summary></details></li></ul><ul id="5b012f52-4837-4f7f-b9d4-c591ce6629d6" class="toggle"><li><details open=""><summary>Multiplicação</summary></details></li></ul><ul id="ada15cc7-06e9-4c5a-a61d-e35385a23927" class="toggle"><li><details open=""><summary>Menu de aplicação</summary></details></li></ul><ul id="5e6c4a0f-bf0c-4187-a017-17697ecb11e2" class="toggle"><li><details open=""><summary>Chamando as funções</summary></details></li></ul><ul id="afb4eb83-7266-4031-b9e8-f7922e20d7f4" class="toggle"><li><details open=""><summary>Saindo da aplicação</summary></details></li></ul><ul id="4f9b477f-98aa-4cc9-8050-48d2d9330bdf" class="toggle"><li><details open=""><summary>Revisão</summary></details></li></ul></details></li></ul><p id="e89952b5-1a20-45fb-8a0c-0fce0ac24562" class="">
+}</code></pre></li></ul></details></li></ul><ul id="9809330b-f4de-487d-a81f-12d850d8a1a2" class="toggle"><li><details open=""><summary>Divisão</summary><ul id="76a5214f-7d5d-4b5f-995d-8bc5c6e48a27" class="bulleted-list"><li style="list-style-type:disc">Agora nosso código ficou da seguinte forma:<pre id="e6339cdd-bb59-417c-8b5f-1823f6582672" class="code"><code>namespace Calculadora;
+
+
+class Program
+{
+    static void Main(string[] args)
+    {
+   
+        Soma();
+        Subtracao();
+        Divisao();
+    }
+
+    static void Soma(){
+        Console.Clear();
+        Console.WriteLine(&quot;Primeiro valor: &quot;);
+        float v1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;Segundo valor: &quot;);
+        float v2 = float.Parse(Console.ReadLine());
+        
+
+        Console.WriteLine(&quot;&quot;);
+
+        float resultado = v1+v2;
+        // Console.WriteLine(&quot;O resultado da soma é &quot; + resultado);
+        Console.WriteLine(&quot;O resultado da soma é &quot; + (v1 + v2));
+        // Console.WriteLine($&quot;O resultado da soma é {resultado}&quot;);
+        // Console.WriteLine($&quot;O resultado da soma é {v1+v2}&quot;);
+
+        Console.WriteLine(Console.ReadKey());
+    }
+
+    static void Subtracao()
+    {
+        Console.Clear();
+        
+        Console.WriteLine(&quot;Primeiro valor: &quot;);
+        float v1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;Segundo valor: &quot;);
+        float v2 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;&quot;);
+
+        float resultado = v1-v2;
+        Console.WriteLine($&quot;O resultado da subtração é {resultado}&quot;);
+
+        Console.WriteLine(Console.ReadKey());
+    }
+
+    static void Divisao()
+    {
+        Console.Clear();
+
+        Console.WriteLine(&quot;Primeiro valor:&quot;);
+        float v1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;Segundo valor:&quot;);
+        float v2 = float.Parse(Console.ReadLine());
+        
+        Console.WriteLine(&quot;&quot;);
+
+        float resultado = v1/v2;
+        Console.WriteLine($&quot;O resultado da divisão é {resultado}&quot;);
+        Console.ReadKey();
+    }
+
+}</code></pre></li></ul></details></li></ul><ul id="5b012f52-4837-4f7f-b9d4-c591ce6629d6" class="toggle"><li><details open=""><summary>Multiplicação</summary><ul id="6cfe4679-0c70-44a7-9969-02103122f007" class="bulleted-list"><li style="list-style-type:disc">Agora nossa código ficou da seguinte forma:<pre id="1a240f1b-79b9-4676-b2da-e0620b8c4537" class="code"><code>namespace Calculadora;
+
+
+class Program
+{
+    static void Main(string[] args)
+    {
+   
+        Soma();
+        Subtracao();
+        Divisao();
+        Multiplicacao();
+    }
+
+    static void Soma(){
+        Console.Clear();
+        Console.WriteLine(&quot;Primeiro valor: &quot;);
+        float v1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;Segundo valor: &quot;);
+        float v2 = float.Parse(Console.ReadLine());
+        
+
+        Console.WriteLine(&quot;&quot;);
+
+        float resultado = v1+v2;
+        // Console.WriteLine(&quot;O resultado da soma é &quot; + resultado);
+        Console.WriteLine(&quot;O resultado da soma é &quot; + (v1 + v2));
+        // Console.WriteLine($&quot;O resultado da soma é {resultado}&quot;);
+        // Console.WriteLine($&quot;O resultado da soma é {v1+v2}&quot;);
+
+        Console.WriteLine(Console.ReadKey());
+    }
+
+    static void Subtracao()
+    {
+        Console.Clear();
+        
+        Console.WriteLine(&quot;Primeiro valor: &quot;);
+        float v1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;Segundo valor: &quot;);
+        float v2 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;&quot;);
+
+        float resultado = v1-v2;
+        Console.WriteLine($&quot;O resultado da subtração é {resultado}&quot;);
+
+        Console.WriteLine(Console.ReadKey());
+    }
+
+    static void Divisao()
+    {
+        Console.Clear();
+
+        Console.WriteLine(&quot;Primeiro valor:&quot;);
+        float v1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;Segundo valor:&quot;);
+        float v2 = float.Parse(Console.ReadLine());
+        
+        Console.WriteLine(&quot;&quot;);
+
+        float resultado = v1/v2;
+        Console.WriteLine($&quot;O resultado da divisão é {resultado}&quot;);
+        Console.ReadKey();
+    }
+
+    static void Multiplicacao()
+    {
+        Console.Clear();
+
+        Console.WriteLine(&quot;Primeiro número:&quot;);
+        float v1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;Segundo número:&quot;);
+        float v2 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;&quot;);
+
+        float resultado = v1 * v2;
+        Console.WriteLine($&quot;O resultado da multiplicação é {resultado}&quot;);
+
+        Console.ReadKey();
+    }
+
+}</code></pre></li></ul></details></li></ul><ul id="ada15cc7-06e9-4c5a-a61d-e35385a23927" class="toggle"><li><details open=""><summary>Menu de aplicação</summary><ul id="48bce60f-14ca-429a-bae0-070521ce14df" class="bulleted-list"><li style="list-style-type:disc">Agora vamos ver nossa aplicação depois de ter adicionado um menu<pre id="7d14f7b8-b426-4dfb-8deb-4ab34ea501ae" class="code"><code>namespace Calculadora;
+
+
+class Program
+{
+    static void Main(string[] args)
+    {
+   
+        Menu();
+    }
+
+    static void Menu()
+    {
+        Console.Clear();
+
+        Console.WriteLine(&quot;O que deseja fazer?&quot;);
+        Console.WriteLine(&quot;1 - Soma&quot;);
+        Console.WriteLine(&quot;2 - Subtração&quot;);
+        Console.WriteLine(&quot;3 - Divisão&quot;);
+        Console.WriteLine(&quot;4 - Multiplicação&quot;);
+        
+        Console.WriteLine(&quot;-----------------------------&quot;);
+        Console.WriteLine(&quot;Selecione uma opção: &quot;);
+        short resultado = short.Parse(Console.ReadLine());
+    }
+
+    static void Soma(){
+        Console.Clear();
+        Console.WriteLine(&quot;Primeiro valor: &quot;);
+        float v1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;Segundo valor: &quot;);
+        float v2 = float.Parse(Console.ReadLine());
+        
+
+        Console.WriteLine(&quot;&quot;);
+
+        float resultado = v1+v2;
+        // Console.WriteLine(&quot;O resultado da soma é &quot; + resultado);
+        Console.WriteLine(&quot;O resultado da soma é &quot; + (v1 + v2));
+        // Console.WriteLine($&quot;O resultado da soma é {resultado}&quot;);
+        // Console.WriteLine($&quot;O resultado da soma é {v1+v2}&quot;);
+
+        Console.WriteLine(Console.ReadKey());
+    }
+
+    static void Subtracao()
+    {
+        Console.Clear();
+        
+        Console.WriteLine(&quot;Primeiro valor: &quot;);
+        float v1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;Segundo valor: &quot;);
+        float v2 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;&quot;);
+
+        float resultado = v1-v2;
+        Console.WriteLine($&quot;O resultado da subtração é {resultado}&quot;);
+
+        Console.WriteLine(Console.ReadKey());
+    }
+
+    static void Divisao()
+    {
+        Console.Clear();
+
+        Console.WriteLine(&quot;Primeiro valor:&quot;);
+        float v1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;Segundo valor:&quot;);
+        float v2 = float.Parse(Console.ReadLine());
+        
+        Console.WriteLine(&quot;&quot;);
+
+        float resultado = v1/v2;
+        Console.WriteLine($&quot;O resultado da divisão é {resultado}&quot;);
+        Console.ReadKey();
+    }
+
+    static void Multiplicacao()
+    {
+        Console.Clear();
+
+        Console.WriteLine(&quot;Primeiro número:&quot;);
+        float v1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;Segundo número:&quot;);
+        float v2 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine(&quot;&quot;);
+
+        float resultado = v1 * v2;
+        Console.WriteLine($&quot;O resultado da multiplicação é {resultado}&quot;);
+
+        Console.ReadKey();
+    }
+
+}</code></pre></li></ul></details></li></ul><ul id="5e6c4a0f-bf0c-4187-a017-17697ecb11e2" class="toggle"><li><details open=""><summary>Chamando as funções</summary></details></li></ul><ul id="afb4eb83-7266-4031-b9e8-f7922e20d7f4" class="toggle"><li><details open=""><summary>Saindo da aplicação</summary></details></li></ul><ul id="4f9b477f-98aa-4cc9-8050-48d2d9330bdf" class="toggle"><li><details open=""><summary>Revisão</summary></details></li></ul></details></li></ul><p id="e89952b5-1a20-45fb-8a0c-0fce0ac24562" class="">
 </p></div></article></body></html>
