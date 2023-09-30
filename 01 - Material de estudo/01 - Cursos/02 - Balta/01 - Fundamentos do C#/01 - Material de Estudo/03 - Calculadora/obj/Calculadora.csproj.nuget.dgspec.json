@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\03 - Calculadora\\Calculadora.csproj": {}
+    "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\03 - Calculadora\\Calculadora.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\03 - Calculadora\\Calculadora.csproj": {
+    "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\03 - Calculadora\\Calculadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\03 - Calculadora\\Calculadora.csproj",
+        "projectUniqueName": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\03 - Calculadora\\Calculadora.csproj",
         "projectName": "Calculadora",
-        "projectPath": "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\03 - Calculadora\\Calculadora.csproj",
+        "projectPath": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\03 - Calculadora\\Calculadora.csproj",
         "packagesPath": "C:\\Users\\Alessandro\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\03 - Calculadora\\obj\\",
+        "outputPath": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\03 - Calculadora\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
