@@ -2069,4 +2069,53 @@ class Program
         Thread.Sleep(2500);
     }
 
-}</code></pre></li></ul></details></li></ul><ul id="520a0ab8-f082-47d1-8adf-b3d8f78ffed5" class="toggle"><li><details open=""><summary>Substring</summary></details></li></ul></details></li></ul></div></article></body></html>
+}</code></pre></li></ul></details></li></ul><ul id="520a0ab8-f082-47d1-8adf-b3d8f78ffed5" class="toggle"><li><details open=""><summary>Substring</summary><ul id="dc93d6cf-9c4c-42c1-b45a-c8565c074356" class="bulleted-list"><li style="list-style-type:disc">Todo tipo string têm métodos para tratar e manipular ela, vamos usar o substring para pegar o ultimo caractere</li></ul><ul id="8872c6fa-93dc-4166-a52d-be56d0ceec85" class="bulleted-list"><li style="list-style-type:disc">O método substring</li></ul><ul id="e82589c3-aa1d-45f0-932c-8af387f3a0df" class="toggle"><li><details open=""><summary>Método .Substring()</summary><p id="9fbb5143-a81a-4adb-897d-2d07fd3d6c06" class="">Em C#, o método <code>Substring</code> é usado para obter uma parte de uma string. Ele retorna uma nova string que é uma subcadeia da string original.</p><p id="4d0e06c5-3d09-4a8e-b449-caa3a18c0a98" class="">Aqui está a sintaxe do método <code>Substring</code>:</p><pre id="3329407e-34c3-40bf-acfe-e39f02985b3f" class="code code-wrap"><code>string result = originalString.Substring(startIndex);
+string result = originalString.Substring(startIndex, length);
+</code></pre><ul id="19c4b961-debf-48fa-909b-1f79b76ab761" class="bulleted-list"><li style="list-style-type:disc"><code>originalString</code>: A string da qual você deseja obter uma subcadeia.</li></ul><ul id="8f1bfc1d-3bd5-43b5-8ac3-450dcdb9824b" class="bulleted-list"><li style="list-style-type:disc"><code>startIndex</code>: A posição inicial na string original a partir da qual a subcadeia será extraída. Lembre-se que em C#, as posições na string são baseadas em zero, ou seja, o primeiro caractere tem índice 0.</li></ul><ul id="10eeda68-7c98-4c61-83bc-279bb596e9cf" class="bulleted-list"><li style="list-style-type:disc"><code>length</code>: O número de caracteres que serão incluídos na subcadeia. Este argumento é opcional. Se omitido, a subcadeia incluirá todos os caracteres a partir do <code>startIndex</code> até o final da string.</li></ul><p id="1024514d-f13f-4aaa-8d07-8f2bdf5001b7" class="">Exemplo:</p><pre id="9096b5f6-9377-4f95-90a2-155438dddbfe" class="code code-wrap"><code>string originalString = &quot;Hello, World!&quot;;
+string subString1 = originalString.Substring(7); // Resultado: &quot;World!&quot;
+string subString2 = originalString.Substring(0, 5); // Resultado: &quot;Hello&quot;
+</code></pre><p id="ed53e0ac-8694-4103-9833-c579d9c0185a" class="">Lembre-se de que o índice <code>startIndex</code> deve estar dentro dos limites da string original, ou seja, não pode ser negativo e não pode exceder o comprimento da string menos um. Caso contrário, o método <code>Substring</code> lançará uma exceção <code>ArgumentOutOfRangeException</code>.</p></details></li></ul><ul id="039d11da-a54a-43da-9c5c-77374502a7ff" class="bulleted-list"><li style="list-style-type:disc">Agora vamos usar o parse do char para converter uma string em um caractere<pre id="036a71a8-e195-475c-b034-6105689e8a1b" class="code"><code> char valor = char,Parse(&quot;Teste&quot;.SubTring(0,1));
+	//valor == T</code></pre></li></ul><ul id="d32ff871-1554-4a34-9aee-8a16c11dc8a3" class="bulleted-list"><li style="list-style-type:disc">Lembrando que string é um array de caractere então a primeira casa começa com 0</li></ul><ul id="b5c7bce3-cb40-49f7-9b2e-0f49b80d1767" class="bulleted-list"><li style="list-style-type:disc">To string também tem um atributo que retorna a quantidade de caracteres da string<pre id="aca1aec7-dfbe-42c5-b8f8-ca30d6116d68" class="code"><code>&quot;teste&quot;.Length
+//5</code></pre></li></ul><ul id="24cec0b8-fa2f-4d36-903e-4f58eff4d8a5" class="bulleted-list"><li style="list-style-type:disc">Para pegar a ultima casa utilizamos a seguinte abordagem “Teste”.Length -1</li></ul><ul id="64bf8eba-2053-43d3-9aec-bac52f32a1d7" class="bulleted-list"><li style="list-style-type:disc">Agora nosso código fica desta forma<pre id="b4b27e09-a553-4413-9ec3-4d9ae4bd9447" class="code"><code>namespace Cronometro;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Menu();
+    }
+
+    static void Menu()
+    {
+        Console.Clear();
+
+        Console.WriteLine(&quot;S = Segundo =&gt; 10s = 10 segundos&quot;);
+        Console.WriteLine(&quot;M - Minuto  =&gt; 10m = 10 minutos&quot;);
+        Console.WriteLine(&quot;0 - Sair&quot;);
+        Console.WriteLine(&quot;Quanto tempo deseja contar?&quot;);
+
+        string data = Console.ReadLine().ToLower();
+
+        char type = char.Parse(data.Substring(data.Length-1,1));
+
+    }
+
+    static void Start(int time)
+    {
+        int currentTime = 0;
+
+        while(currentTime != time)
+        {
+            Console.Clear();
+            currentTime++;
+            Console.WriteLine(currentTime);
+            Thread.Sleep(1000);
+        }
+
+        Console.Clear();
+        Console.WriteLine(&quot;Cronômetro finalizado!&quot;);
+        Thread.Sleep(2500);
+    }
+
+}</code></pre></li></ul></details></li></ul><ul id="488b7c05-af03-4473-a6e1-4a8b973893e7" class="toggle"><li><details open=""><summary>Obtendo a opção</summary><p id="2c40caa9-1cb1-4eb9-9286-680e6f9d5914" class="">
+</p></details></li></ul></details></li></ul></div></article></body></html>
