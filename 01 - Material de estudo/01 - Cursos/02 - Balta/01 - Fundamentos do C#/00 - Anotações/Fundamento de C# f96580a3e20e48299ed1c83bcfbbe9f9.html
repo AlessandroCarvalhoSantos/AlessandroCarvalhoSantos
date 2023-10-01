@@ -1993,4 +1993,41 @@ class Program
     }
 
 }</code></pre></li></ul><p id="09535497-f09f-4897-afaa-4ea05db2e162" class="">
-</p></details></li></ul></details></li></ul></div></article></body></html>
+</p></details></li></ul><ul id="a7181023-b5b5-494e-9b3c-101b7f7bbab7" class="toggle"><li><details open=""><summary>Criando o menu</summary><ul id="a00ce5dc-4129-42bc-8bb5-3a4457947d00" class="bulleted-list"><li style="list-style-type:disc">Variáveis declaradas por parâmetros em um função não podem ser declaradas dentro da função com o mesmo nome do parâmetro.</li></ul><ul id="e25d65ff-863e-4f98-9ed2-18d282c2c839" class="bulleted-list"><li style="list-style-type:disc">Agora vamos criar um menu<pre id="ea2b5e75-cd36-4e96-9134-b142c6a8c95c" class="code"><code>namespace Cronometro;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Menu();
+    }
+
+    static void Menu()
+    {
+        Console.Clear();
+
+        Console.WriteLine(&quot;S = Segundo&quot;);
+        Console.WriteLine(&quot;M - Minuto&quot;);
+        Console.WriteLine(&quot;0 - Sair&quot;);
+        Console.WriteLine(&quot;Quanto tempo deseja contar?&quot;);
+    }
+
+    static void Start(int time)
+    {
+        int currentTime = 0;
+
+        while(currentTime != time)
+        {
+            Console.Clear();
+            currentTime++;
+            Console.WriteLine(currentTime);
+            Thread.Sleep(1000);
+        }
+
+        Console.Clear();
+        Console.WriteLine(&quot;Cronômetro finalizado!&quot;);
+        Thread.Sleep(2500);
+    }
+
+}</code></pre></li></ul></details></li></ul><ul id="b469cf65-5b12-4f4b-9b51-06bb2fcf4f58" class="toggle"><li><details open=""><summary>Opções do menu</summary></details></li></ul><p id="d34b453e-09cf-4e5e-938b-8dd23866d87a" class="">
+</p></details></li></ul></div></article></body></html>
