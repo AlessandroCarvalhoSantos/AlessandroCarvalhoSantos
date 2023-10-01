@@ -2117,5 +2117,46 @@ class Program
         Thread.Sleep(2500);
     }
 
-}</code></pre></li></ul></details></li></ul><ul id="488b7c05-af03-4473-a6e1-4a8b973893e7" class="toggle"><li><details open=""><summary>Obtendo a opção</summary><p id="2c40caa9-1cb1-4eb9-9286-680e6f9d5914" class="">
-</p></details></li></ul></details></li></ul></div></article></body></html>
+}</code></pre></li></ul></details></li></ul><ul id="488b7c05-af03-4473-a6e1-4a8b973893e7" class="toggle"><li><details open=""><summary>Obtendo a opção</summary><ul id="2c40caa9-1cb1-4eb9-9286-680e6f9d5914" class="bulleted-list"><li style="list-style-type:disc">Agora vamos tratar o número, vamos usar a mesma abordagem porém na quantidade.<pre id="be14e0d6-7c32-431a-9aea-3e428c246e03" class="code"><code>int time = int.Parse(&quot;54545S&quot;.Substring(0, data.Length-1));
+//54545</code></pre></li></ul><ul id="16f25e4c-71b9-41fa-bd72-765e62dcf408" class="bulleted-list"><li style="list-style-type:disc">Agora nosso código fica desta forma<pre id="13ece1e1-97bf-4f03-a862-cb2835e97e9e" class="code"><code>namespace Cronometro;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Menu();
+    }
+
+    static void Menu()
+    {
+        Console.Clear();
+
+        Console.WriteLine(&quot;S = Segundo =&gt; 10s = 10 segundos&quot;);
+        Console.WriteLine(&quot;M - Minuto  =&gt; 10m = 10 minutos&quot;);
+        Console.WriteLine(&quot;0 - Sair&quot;);
+        Console.WriteLine(&quot;Quanto tempo deseja contar?&quot;);
+
+        string data = Console.ReadLine().ToLower();
+
+        char type = char.Parse(data.Substring(data.Length-1,1));
+        int time = int.Parse(data.Substring(0, data.Length-1));
+    }
+
+    static void Start(int time)
+    {
+        int currentTime = 0;
+
+        while(currentTime != time)
+        {
+            Console.Clear();
+            currentTime++;
+            Console.WriteLine(currentTime);
+            Thread.Sleep(1000);
+        }
+
+        Console.Clear();
+        Console.WriteLine(&quot;Cronômetro finalizado!&quot;);
+        Thread.Sleep(2500);
+    }
+
+}</code></pre></li></ul></details></li></ul><ul id="29c5d895-cddc-430f-a19e-8cf28cdd47b1" class="toggle"><li><details open=""><summary>Calculando o tempo</summary></details></li></ul></details></li></ul></div></article></body></html>
