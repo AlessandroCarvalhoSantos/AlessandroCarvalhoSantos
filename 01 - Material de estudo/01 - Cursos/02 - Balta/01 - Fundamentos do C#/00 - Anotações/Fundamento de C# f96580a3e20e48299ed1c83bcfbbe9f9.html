@@ -2159,4 +2159,121 @@ class Program
         Thread.Sleep(2500);
     }
 
-}</code></pre></li></ul></details></li></ul><ul id="29c5d895-cddc-430f-a19e-8cf28cdd47b1" class="toggle"><li><details open=""><summary>Calculando o tempo</summary></details></li></ul></details></li></ul></div></article></body></html>
+}</code></pre></li></ul></details></li></ul><ul id="29c5d895-cddc-430f-a19e-8cf28cdd47b1" class="toggle"><li><details open=""><summary>Calculando o tempo</summary><ul id="193a3866-0441-471d-b907-bb4807fdea9e" class="bulleted-list"><li style="list-style-type:disc">Dica: ctrl + c, para a aplicação pelo terminal</li></ul><ul id="9d00dc8c-c099-4bcd-805b-b0e7736e2e23" class="bulleted-list"><li style="list-style-type:disc">Agora vamos fazer  as operações de calculo do tempo<pre id="ed4cbf07-5838-4c25-8feb-1e3a39d3dc18" class="code"><code>namespace Cronometro;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Menu();
+    }
+
+    static void Menu()
+    {
+        Console.Clear();
+
+        Console.WriteLine(&quot;S = Segundo =&gt; 10s = 10 segundos&quot;);
+        Console.WriteLine(&quot;M - Minuto  =&gt; 10m = 10 minutos&quot;);
+        Console.WriteLine(&quot;0 - Sair&quot;);
+        Console.WriteLine(&quot;Quanto tempo deseja contar?&quot;);
+
+        string data = Console.ReadLine().ToLower();
+
+        char type = char.Parse(data.Substring(data.Length-1,1));
+        int time = int.Parse(data.Substring(0, data.Length-1));
+
+         int multiplicador = 1;
+
+        if(type == &#x27;m&#x27;)
+            multiplicador = 60;
+
+        if(time == 0)
+            Environment.Exit(0);
+
+        Start(time * multiplicador);
+    }
+
+    static void Start(int time)
+    {
+        int currentTime = 0;
+
+        while(currentTime != time)
+        {
+            Console.Clear();
+            currentTime++;
+            Console.WriteLine(currentTime);
+            Thread.Sleep(1000);
+        }
+
+        Console.Clear();
+        Console.WriteLine(&quot;Cronômetro finalizado!&quot;);
+        Thread.Sleep(2500);
+        Menu();
+    }
+
+}</code></pre></li></ul></details></li></ul><ul id="7f2563c4-fbb7-41fa-a20a-f2382dd26220" class="toggle"><li><details open=""><summary>Finalizando a aplicação</summary><ul id="b75257c0-6f6c-4985-bf2d-207e74c231d5" class="bulleted-list"><li style="list-style-type:disc">Agora vamos fazer um pré-start só para animar melhor<pre id="eb6e3af2-e9ba-4d16-87bd-2539e826cec3" class="code"><code>namespace Cronometro;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Menu();
+    }
+
+    static void Menu()
+    {
+        Console.Clear();
+
+        Console.WriteLine(&quot;S = Segundo =&gt; 10s = 10 segundos&quot;);
+        Console.WriteLine(&quot;M - Minuto  =&gt; 10m = 10 minutos&quot;);
+        Console.WriteLine(&quot;0 - Sair&quot;);
+        Console.WriteLine(&quot;Quanto tempo deseja contar?&quot;);
+
+        string data = Console.ReadLine().ToLower();
+
+        char type = char.Parse(data.Substring(data.Length-1,1));
+        int time = int.Parse(data.Substring(0, data.Length-1));
+
+         int multiplicador = 1;
+
+        if(type == &#x27;m&#x27;)
+            multiplicador = 60;
+
+        if(time == 0)
+            Environment.Exit(0);
+
+        PreStart(time * multiplicador);
+    }
+
+    static void PreStart(int time)
+    {
+        Console.Clear();
+        Console.WriteLine(&quot;Preparar...&quot;);
+        Thread.Sleep(1000);
+        Console.WriteLine(&quot;Apontar...&quot;);
+        Thread.Sleep(1000);
+        Console.WriteLine(&quot;Já!!!&quot;);
+        Thread.Sleep(2500);
+
+        Start(time);
+    }
+
+    static void Start(int time)
+    {
+        int currentTime = 0;
+
+        while(currentTime != time)
+        {
+            Console.Clear();
+            currentTime++;
+            Console.WriteLine(currentTime);
+            Thread.Sleep(1000);
+        }
+
+        Console.Clear();
+        Console.WriteLine(&quot;Cronômetro finalizado!&quot;);
+        Thread.Sleep(2500);
+        Menu();
+    }
+
+}</code></pre></li></ul></details></li></ul></details></li></ul></div></article></body></html>
