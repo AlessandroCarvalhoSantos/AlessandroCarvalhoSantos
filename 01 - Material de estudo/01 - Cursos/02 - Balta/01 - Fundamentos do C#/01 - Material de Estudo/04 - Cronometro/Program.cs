@@ -12,10 +12,13 @@ class Program
     {
         Console.Clear();
 
-        Console.WriteLine("S = Segundo");
-        Console.WriteLine("M - Minuto");
+        Console.WriteLine("S = Segundo => 10s = 10 segundos");
+        Console.WriteLine("M - Minuto  => 10m = 10 minutos");
         Console.WriteLine("0 - Sair");
         Console.WriteLine("Quanto tempo deseja contar?");
+
+        string data = Console.ReadLine().ToLower();
+
     }
 
     static void Start(int time)

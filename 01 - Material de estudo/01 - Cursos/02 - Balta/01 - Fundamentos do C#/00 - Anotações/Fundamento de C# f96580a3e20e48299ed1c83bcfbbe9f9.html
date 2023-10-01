@@ -2029,5 +2029,44 @@ class Program
         Thread.Sleep(2500);
     }
 
-}</code></pre></li></ul></details></li></ul><ul id="b469cf65-5b12-4f4b-9b51-06bb2fcf4f58" class="toggle"><li><details open=""><summary>Opções do menu</summary></details></li></ul><p id="d34b453e-09cf-4e5e-938b-8dd23866d87a" class="">
-</p></details></li></ul></div></article></body></html>
+}</code></pre></li></ul></details></li></ul><ul id="b469cf65-5b12-4f4b-9b51-06bb2fcf4f58" class="toggle"><li><details open=""><summary>Opções do menu</summary><ul id="a0f5f7d0-540d-4fb0-ad19-6521aaf1aea6" class="bulleted-list"><li style="list-style-type:disc">No menu vamos receber um valor em string concatenado com uma letra, vamos botar algumas validações como um método de uma string .ToLower() para converter as letras para minúsculos, é um método que pode ser aplicado a string ao outros métodos que retorna string</li></ul><pre id="6680bd35-423e-4cd5-b564-2f246a50898a" class="code"><code>&quot;Teste&quot;.ToLower();
+Console.ReadLine().ToLower();</code></pre><ul id="d34b453e-09cf-4e5e-938b-8dd23866d87a" class="bulleted-list"><li style="list-style-type:disc">Pensar no processamento da aplicação é fundamental, para entender forma eficientes de se analisar um código, evitar muitos if e outra condicionais é importante.</li></ul><ul id="099fdf9a-8454-4dbc-86a6-7e7c2b3464f8" class="bulleted-list"><li style="list-style-type:disc">Agora nosso código ficou da seguinte forma<pre id="51d4eee2-e049-40b0-b0e6-aedfff588684" class="code"><code>namespace Cronometro;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Menu();
+    }
+
+    static void Menu()
+    {
+        Console.Clear();
+
+        Console.WriteLine(&quot;S = Segundo =&gt; 10s = 10 segundos&quot;);
+        Console.WriteLine(&quot;M - Minuto  =&gt; 10m = 10 minutos&quot;);
+        Console.WriteLine(&quot;0 - Sair&quot;);
+        Console.WriteLine(&quot;Quanto tempo deseja contar?&quot;);
+
+        string data = Console.ReadLine().ToLower();
+
+    }
+
+    static void Start(int time)
+    {
+        int currentTime = 0;
+
+        while(currentTime != time)
+        {
+            Console.Clear();
+            currentTime++;
+            Console.WriteLine(currentTime);
+            Thread.Sleep(1000);
+        }
+
+        Console.Clear();
+        Console.WriteLine(&quot;Cronômetro finalizado!&quot;);
+        Thread.Sleep(2500);
+    }
+
+}</code></pre></li></ul></details></li></ul><ul id="520a0ab8-f082-47d1-8adf-b3d8f78ffed5" class="toggle"><li><details open=""><summary>Substring</summary></details></li></ul></details></li></ul></div></article></body></html>
