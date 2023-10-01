@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\04 - Cronometro\\04 - Cronometro.csproj": {}
+    "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\04 - Cronometro\\04 - Cronometro.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\04 - Cronometro\\04 - Cronometro.csproj": {
+    "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\04 - Cronometro\\04 - Cronometro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\04 - Cronometro\\04 - Cronometro.csproj",
+        "projectUniqueName": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\04 - Cronometro\\04 - Cronometro.csproj",
         "projectName": "04 - Cronometro",
-        "projectPath": "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\04 - Cronometro\\04 - Cronometro.csproj",
+        "projectPath": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\04 - Cronometro\\04 - Cronometro.csproj",
         "packagesPath": "C:\\Users\\Alessandro\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\04 - Cronometro\\obj\\",
+        "outputPath": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\04 - Cronometro\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

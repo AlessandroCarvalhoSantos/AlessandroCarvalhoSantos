@@ -1,10 +1,11 @@
-﻿namespace Cronometro;
+﻿
+namespace Cronometro;
 
 class Program
 {
     static void Main(string[] args)
     {
-
+        Start();
     }
 
     static void Start()
@@ -14,7 +15,10 @@ class Program
 
         while(currentTime != time)
         {
+            Console.Clear();
             currentTime++;
+            Console.WriteLine(currentTime);
+            Thread.Sleep(1000);
         }
     }
 

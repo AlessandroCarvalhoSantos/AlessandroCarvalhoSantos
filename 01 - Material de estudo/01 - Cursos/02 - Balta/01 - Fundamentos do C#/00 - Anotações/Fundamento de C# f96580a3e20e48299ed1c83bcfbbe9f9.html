@@ -1947,5 +1947,50 @@ class Program
         }
     }
 
-}</code></pre></li></ul></details></li></ul><ul id="e9bddc76-eba7-43e8-8f5b-1f94134b83b5" class="toggle"><li><details open=""><summary>Thread e Sleep</summary><p id="b8c83c46-c5e1-4fe2-8e04-5f9178571ed9" class="">
+}</code></pre></li></ul></details></li></ul><ul id="e9bddc76-eba7-43e8-8f5b-1f94134b83b5" class="toggle"><li><details open=""><summary>Thread e Sleep</summary><ul id="b8c83c46-c5e1-4fe2-8e04-5f9178571ed9" class="bulleted-list"><li style="list-style-type:disc">Agora faremos algumas modificações, o while é está relacionado ao clock do processador, então nos computadores de hoje possuem muita capacidade, então exibe muito rápido.<pre id="7cbcd434-372d-4d74-b03c-7cbe22bf9cba" class="code"><code>namespace Cronometro;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Start();
+    }
+
+    static void Start()
+    {
+        int time = 10;
+        int currentTime = 0;
+
+        while(currentTime != time)
+        {
+            Console.Clear();
+            currentTime++;
+            Console.WriteLine(currentTime);
+        }
+    }
+
+}</code></pre></li></ul><ul id="532669d4-e607-42a1-88d4-78833187b6b5" class="bulleted-list"><li style="list-style-type:disc">Então temos que fazer nossa aplicação esperar 1 segundo, para isso podemos usar o thread<ul id="0ab3ab98-df26-46c6-8691-73b54609aad1" class="toggle"><li><details open=""><summary>Mais sobre thread</summary><p id="5bdfc066-a7bb-4c1d-bf36-b0e84208d4f3" class="">Em C#, uma &quot;thread&quot; (ou fio de execução) refere-se à menor unidade de execução dentro de um processo que pode ser executada simultaneamente com outras threads. O C# fornece um conjunto rico de recursos e classes para trabalhar com threads, o que torna possível executar tarefas concorrentemente, melhorando assim o desempenho de aplicações.</p><p id="d795320d-846a-427b-a728-a3fb89791532" class="">Aqui estão alguns conceitos e classes-chave relacionados à programação concorrente (ou &quot;threading&quot;) em C#:</p><ol type="1" id="51032918-d75b-4a2c-bdb8-fbc5a458ea55" class="numbered-list" start="1"><li><strong>Classe </strong><code><strong>System.Threading.Thread</strong></code>:<ul id="f430cc1c-6895-48fc-96c9-396067e8c342" class="bulleted-list"><li style="list-style-type:disc">Esta classe, que faz parte do namespace <code>System.Threading</code>, é utilizada para criar e manipular threads em um programa C#.</li></ul></li></ol><ol type="1" id="cc28fa73-65ab-4b7d-bf35-3b861f014076" class="numbered-list" start="2"><li><code><strong>System.Threading.ThreadStart</strong></code><strong> e </strong><code><strong>System.Threading.ParameterizedThreadStart</strong></code>:<ul id="927ae506-4044-40b3-b0d2-14164f9b1f8c" class="bulleted-list"><li style="list-style-type:disc">Estes são os delegados utilizados para especificar o ponto de entrada da execução de uma nova thread.</li></ul></li></ol><ol type="1" id="15e5f81f-c73a-41d4-997d-db000380367e" class="numbered-list" start="3"><li><strong>Método </strong><code><strong>Thread.Start</strong></code>:<ul id="72128afe-c545-404d-a7ce-bec330f2ce74" class="bulleted-list"><li style="list-style-type:disc">Este método é usado para iniciar a execução de uma nova thread.</li></ul></li></ol><ol type="1" id="2eb21959-3e8d-4857-8e61-375ae3e2fe44" class="numbered-list" start="4"><li><code><strong>Thread.Sleep</strong></code>:<ul id="e84b27d2-b86e-4e67-8a28-5b39fbaff649" class="bulleted-list"><li style="list-style-type:disc">Este método suspende a execução da thread atual por um período especificado, simulando uma pausa.</li></ul></li></ol><ol type="1" id="b83a5aa8-0e7f-4a05-8c25-ef8d53e283a5" class="numbered-list" start="5"><li><code><strong>Thread.Join</strong></code>:<ul id="04bc1d4f-ac5e-4076-8870-4868515b0ee2" class="bulleted-list"><li style="list-style-type:disc">Este método faz com que o programa principal (ou outra thread) aguarde até que a thread em questão termine sua execução.</li></ul></li></ol><ol type="1" id="2f5f462c-d4e2-44d6-9a4a-86330af97522" class="numbered-list" start="6"><li><code><strong>Thread.Abort</strong></code>:<ul id="2d3cdd95-e00f-4063-a6d6-6947ee15563e" class="bulleted-list"><li style="list-style-type:disc">Este método é usado para interromper abruptamente a execução de uma thread.</li></ul></li></ol><ol type="1" id="999ce203-5f25-4828-84a3-c8fdea994e1c" class="numbered-list" start="7"><li><code><strong>ThreadPool</strong></code>:<ul id="93c182bf-ef34-40b0-8405-b644f3a5f4c9" class="bulleted-list"><li style="list-style-type:disc">O .NET Framework fornece uma pool de threads que podem ser reutilizadas para a execução de tarefas. É gerenciada automaticamente pelo sistema.</li></ul></li></ol><ol type="1" id="1f93d042-22b2-4308-8673-2c073d8319f0" class="numbered-list" start="8"><li><strong>Sincronização e Monitores</strong>:<ul id="e6b2cde1-7ba0-4179-8eba-166d89bd020b" class="bulleted-list"><li style="list-style-type:disc">Para evitar condições de corrida e garantir a consistência de dados compartilhados entre threads, é essencial usar mecanismos de sincronização como <code>lock</code>, <code>Monitor</code>, <code>Mutex</code>, etc.</li></ul></li></ol><ol type="1" id="dd635ecc-da7c-43de-b2bd-a2ad9e32c9a1" class="numbered-list" start="9"><li><strong>Thread Safety</strong>:<ul id="ef501b50-e1bb-49d4-9b32-9c329a029d16" class="bulleted-list"><li style="list-style-type:disc">Refere-se à prática de escrever código de forma que ele possa ser executado por múltiplas threads simultaneamente sem causar problemas de concorrência.</li></ul></li></ol><ol type="1" id="650b959d-47c7-484b-9ef9-080ab6ac3606" class="numbered-list" start="10"><li><strong>Deadlock</strong>:<ul id="55343b04-29ac-493b-908a-75389f7cc989" class="bulleted-list"><li style="list-style-type:disc">Um deadlock ocorre quando duas ou mais threads ficam bloqueadas indefinidamente, esperando uma pela outra para liberar um recurso.</li></ul></li></ol><p id="41366fe1-5aa5-4267-8ee4-29437327c3c0" class="">Lembrando que trabalhar com threads pode ser complexo e requer cuidado para evitar problemas como race conditions, deadlocks, e outros tipos de bugs relacionados a concorrência. Portanto, sempre é recomendado entender bem os conceitos de programação concorrente e utilizar as ferramentas e práticas adequadas ao desenvolver aplicações multi-threaded em C#.</p></details></li></ul></li></ul><ul id="ae27a700-7283-435d-943a-1a82c5c37573" class="bulleted-list"><li style="list-style-type:disc">Para usar ela precisamos importar a biblioteca Threading<pre id="6026b4b1-d807-4f0b-9cbc-8265c7a351ef" class="code"><code>using System.Threading;</code></pre></li></ul><ul id="76e52df7-c550-434b-a9ce-011b3fd43983" class="bulleted-list"><li style="list-style-type:disc">Em aplicações mais atuais o system já vem importado como padrão, então não precisa adicionar ela, já da pra usar normalmente.</li></ul><ul id="baeaf634-8b3c-442b-9cbd-3759501eb34d" class="bulleted-list"><li style="list-style-type:disc">O vs Code tem um lâmpada de ajuda, que nos auxilia na importação caso precise.</li></ul><ul id="66785f13-08b7-46d2-b6f6-b5ea5508f7a3" class="bulleted-list"><li style="list-style-type:disc">Como a thread podemos manipular a execução atual do nosso programa.</li></ul><ul id="1f8150f4-4a3e-4f3c-babd-9fbfb0caa464" class="bulleted-list"><li style="list-style-type:disc">Vamos usar o método sleep, que serve para parar a aplicação por um determinado tempo em milissegundos.<pre id="74f07eb7-8fd0-45c8-a379-283693d6ce8c" class="code"><code>Theread.Sleep(1000)</code></pre></li></ul><ul id="cd8e0c58-dae2-432c-8653-0c76a8c893a2" class="bulleted-list"><li style="list-style-type:disc">1000 milissegundos equivale há 1 segundo</li></ul><ul id="6223c0cc-61cd-4856-8d71-b9cc147cd017" class="bulleted-list"><li style="list-style-type:disc">Depois dessa atualização nosso código ficou desta forma;<pre id="48ba7524-23ce-4588-ba35-c0305b74a51b" class="code"><code>namespace Cronometro;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Start();
+    }
+
+    static void Start()
+    {
+        int time = 10;
+        int currentTime = 0;
+
+        while(currentTime != time)
+        {
+            Console.Clear();
+            currentTime++;
+            Console.WriteLine(currentTime);
+            Thread.Sleep(1000);
+        }
+    }
+
+}</code></pre></li></ul><p id="09535497-f09f-4897-afaa-4ea05db2e162" class="">
 </p></details></li></ul></details></li></ul></div></article></body></html>
