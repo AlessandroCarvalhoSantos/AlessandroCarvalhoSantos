@@ -1,4 +1,4 @@
-﻿namespace EditorHtml;
+﻿namespace EditorTexto;
 
 
 class Program

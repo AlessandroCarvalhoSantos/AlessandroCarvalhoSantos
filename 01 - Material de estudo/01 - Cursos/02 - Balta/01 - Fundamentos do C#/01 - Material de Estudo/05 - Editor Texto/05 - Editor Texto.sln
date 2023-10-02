@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05 - Editor HTML", "05 - Editor HTML.csproj", "{F8D34912-959A-405D-B647-3A6C78B6109F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05 - Editor Texto", "05 - Editor Texto.csproj", "{1C36D54A-E06C-4138-8856-7A7FB37FD013}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F8D34912-959A-405D-B647-3A6C78B6109F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F8D34912-959A-405D-B647-3A6C78B6109F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F8D34912-959A-405D-B647-3A6C78B6109F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F8D34912-959A-405D-B647-3A6C78B6109F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C36D54A-E06C-4138-8856-7A7FB37FD013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C36D54A-E06C-4138-8856-7A7FB37FD013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C36D54A-E06C-4138-8856-7A7FB37FD013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C36D54A-E06C-4138-8856-7A7FB37FD013}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B5227FB4-6F96-4CFA-929C-EC1CA4D20F70}
+		SolutionGuid = {4A21A76A-6B21-4C50-BCDB-366112839C06}
 	EndGlobalSection
 EndGlobal

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\05 - Editor HTML\\05 - Editor HTML.csproj",
-      "projectName": "05 - Editor HTML",
-      "projectPath": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\05 - Editor HTML\\05 - Editor HTML.csproj",
+      "projectUniqueName": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\05 - Editor Texto\\05 - Editor Texto.csproj",
+      "projectName": "05 - Editor Texto",
+      "projectPath": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\05 - Editor Texto\\05 - Editor Texto.csproj",
       "packagesPath": "C:\\Users\\Alessandro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\05 - Editor HTML\\obj\\",
+      "outputPath": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\05 - Editor Texto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
