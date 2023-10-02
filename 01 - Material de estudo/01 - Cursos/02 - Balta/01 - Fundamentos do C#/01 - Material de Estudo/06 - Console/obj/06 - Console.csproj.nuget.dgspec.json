@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\05 - Editor Texto\\05 - Editor Texto.csproj": {}
+    "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\06 - Console\\06 - Console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\05 - Editor Texto\\05 - Editor Texto.csproj": {
+    "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\06 - Console\\06 - Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\05 - Editor Texto\\05 - Editor Texto.csproj",
-        "projectName": "05 - Editor Texto",
-        "projectPath": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\05 - Editor Texto\\05 - Editor Texto.csproj",
+        "projectUniqueName": "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\06 - Console\\06 - Console.csproj",
+        "projectName": "06 - Console",
+        "projectPath": "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\06 - Console\\06 - Console.csproj",
         "packagesPath": "C:\\Users\\Alessandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\05 - Editor Texto\\obj\\",
+        "outputPath": "c:\\Users\\Alessandro\\Desktop\\Repositórios\\AlessandroCarvalhoSantos\\01 - Material de estudo\\01 - Cursos\\02 - Balta\\01 - Fundamentos do C#\\01 - Material de Estudo\\06 - Console\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
