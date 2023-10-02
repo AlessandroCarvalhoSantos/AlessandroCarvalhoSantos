@@ -15,4 +15,7 @@ class Program
         new CheckPalindrome().TesteSolution();
         Console.WriteLine("-----------------------------------------------");
     }
+
 }
+
+
