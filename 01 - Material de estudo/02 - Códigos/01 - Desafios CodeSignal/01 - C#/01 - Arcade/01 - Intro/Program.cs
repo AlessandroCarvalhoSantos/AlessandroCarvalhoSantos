@@ -11,5 +11,8 @@ class Program
         Console.WriteLine("Desafio CenturyFromYear \n");
         new CenturyFromYear().TesteSolution();
         Console.WriteLine("-----------------------------------------------");
+        Console.WriteLine("Desafio CheckPalidrome \n");
+        new CheckPalindrome().TesteSolution();
+        Console.WriteLine("-----------------------------------------------");
     }
 }
