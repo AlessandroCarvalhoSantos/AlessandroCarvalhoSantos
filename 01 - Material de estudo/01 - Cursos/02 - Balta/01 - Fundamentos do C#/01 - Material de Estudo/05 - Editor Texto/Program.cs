@@ -39,7 +39,19 @@ class Program
 
     static void Abrir()
     {
+        Console.Clear();
+        Console.WriteLine("Qual o caminho do arquivo?");
+        string path = Console.ReadLine();
 
+        using (var file = new StreamReader(path))
+        {
+            string text = file.ReadToEnd();
+            Console.WriteLine(text);
+        }
+
+        Console.WriteLine("");
+        Console.ReadLine();
+        Menu();
     }
 
     static void Editar()
@@ -56,7 +68,7 @@ class Program
         }
         while(Console.ReadKey().Key != ConsoleKey.Escape);
 
-        Console.Write(text);
+        Salvar(text);
     }
 
     static void Salvar(string text)
@@ -68,6 +80,10 @@ class Program
         {
             file.Write(text);
         }
+
+        Console.WriteLine($"Arquivo {path} salvo com sucesso!");
+        Console.ReadLine();
+        Menu();
 
     }
 }
