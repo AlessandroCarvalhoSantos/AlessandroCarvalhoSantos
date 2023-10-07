@@ -83,5 +83,21 @@ class Program
         var texto5 = @" Texto \n \n texto";
         Console.WriteLine(texto5);
 
+        //CompareTo
+        //-------------------------------------------------------------
+
+        var texto6 = "Testando";
+        Console.WriteLine(texto6.CompareTo("Testando")); 
+
+
+
+        //Contains
+        //-------------------------------------------------------------
+
+        var texto7 = "Esse texto é um teste";
+        Console.WriteLine(texto7.Contains("teste"));
+
+        var texto8 = "Esse texto é um teste";
+        Console.WriteLine(texto8.Contains("teste", StringComparison.OrdinalIgnoreCase));
     }
 }
