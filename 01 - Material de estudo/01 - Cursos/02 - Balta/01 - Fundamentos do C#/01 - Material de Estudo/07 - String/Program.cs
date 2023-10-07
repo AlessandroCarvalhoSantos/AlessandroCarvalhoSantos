@@ -127,6 +127,13 @@ class Program
                 
         //Índices
         //-------------------------------------------------------------
+        var texto12 = "Esse texto é um teste";
+        Console.WriteLine(texto12.IndexOf("a")); // Retorna -1
+        Console.WriteLine(texto12.LastIndexOf("e")); //Retorna 21
 
+        //Métodos adicionais
+        //-------------------------------------------------------------
+
+        
     }
 }
