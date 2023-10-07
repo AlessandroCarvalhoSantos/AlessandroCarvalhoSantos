@@ -153,5 +153,26 @@ class Program
 
         //Manipulando strings
         //-------------------------------------------------------------
+
+        //replace
+        var texto17 = "Esse texto é um teste";
+        Console.WriteLine(texto17.Replace("teste", "teste2")); 
+
+        //Split
+        var texto18 = "Esse texto é um teste";
+        Console.WriteLine(texto18.Split("a")[0]); 
+
+        //Substring
+
+        var texto19 = "Esse texto é um teste";
+        Console.WriteLine(texto19.Substring(0,4)); 
+
+        //Trim
+
+        var texto20 = "  Esse texto é um teste  ";
+        Console.WriteLine(texto20.Trim()); 
+        Console.WriteLine(texto20.TrimEnd()); 
+        Console.WriteLine(texto20.TrimStart()); 
+
     }
 }
