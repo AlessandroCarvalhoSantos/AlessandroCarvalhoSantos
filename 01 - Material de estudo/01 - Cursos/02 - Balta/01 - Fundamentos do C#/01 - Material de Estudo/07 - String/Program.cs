@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        //GUID
+        //--------------------------------------------------
         var guid = Guid.NewGuid();
         var id = guid.ToString();
         Console.WriteLine(id);
@@ -42,6 +44,44 @@ class Program
         Guid guidConvertido = Guid.ParseExact(guidSemHifen, "N");
 
         Console.WriteLine(guidConvertido);
+    
+        //-------------------------------------------------------------
+
+        // .Format()
+        //-------------------------------------------------------------
+
+        //Concatenando com o +
+        Console.WriteLine("Teste " + "Teste 2");
+
+        var price = 10.2;
+        var texto = "O preço do produto é " + price + " apenas na promoção.";
+
+        Console.WriteLine(texto);
+
+        //Usando o método format de string
+
+        Console.WriteLine(string.Format("O preço do produto é {0} apenas na promoção {1}",price, "."));
+
+
+        //Interporlação de string
+        //-------------------------------------------------------------
+
+
+        var texto2 = $"O preço do produto é {price}";
+        var texto3 = $"O preço do produto é {price + 1}";
+
+        var textolongo = @"Preço  Preço Preço
+        Preço Preço Preço";
+
+        var textoLongoInterpolado = $@" preço:{price} preço:{price} preço:{price} 
+        preço:{price} 
+        preço:{price} ";
+
+        var texto4= "Texto" +
+        "Texto";
+
+        var texto5 = @" Texto \n \n texto";
+        Console.WriteLine(texto5);
 
     }
 }
