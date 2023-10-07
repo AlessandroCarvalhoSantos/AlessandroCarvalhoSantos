@@ -99,5 +99,23 @@ class Program
 
         var texto8 = "Esse texto é um teste";
         Console.WriteLine(texto8.Contains("teste", StringComparison.OrdinalIgnoreCase));
+
+
+        //StartsWith
+        //-------------------------------------------------------------
+
+        var texto9 = "Esse texto é um teste";
+        Console.WriteLine(texto9.StartsWith("teste"));
+
+        Console.WriteLine(texto9.StartsWith("teste", StringComparison.OrdinalIgnoreCase));
+
+        //EndsWith
+        //-------------------------------------------------------------
+
+        var texto10 = "Esse texto é um teste";
+        Console.WriteLine(texto10.EndsWith("teste"));
+
+        Console.WriteLine(texto10.EndsWith("teste", StringComparison.OrdinalIgnoreCase));
+        
     }
 }
