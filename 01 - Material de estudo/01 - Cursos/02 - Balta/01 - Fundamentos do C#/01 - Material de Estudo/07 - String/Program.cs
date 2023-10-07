@@ -117,5 +117,16 @@ class Program
 
         Console.WriteLine(texto10.EndsWith("teste", StringComparison.OrdinalIgnoreCase));
         
+        //Equal
+        //-------------------------------------------------------------
+
+        var texto11 = "Esse texto é um teste";
+        Console.WriteLine(texto11.Equals("teste"));
+        Console.WriteLine(texto11.Equals("teste", StringComparison.OrdinalIgnoreCase));
+
+                
+        //Índices
+        //-------------------------------------------------------------
+
     }
 }
