@@ -134,6 +134,24 @@ class Program
         //Métodos adicionais
         //-------------------------------------------------------------
 
-        
+        //ToUpper e ToLower
+
+        var texto13 = "Esse texto é um teste";
+        Console.WriteLine(texto13.ToLower()); // esse texto é um teste
+        Console.WriteLine(texto13.ToUpper()); // ESSE TEXTO É UM TESTE
+
+        //Insert
+        var texto14 = "Esse texto é um teste";
+        Console.WriteLine(texto14.Insert(0,"a"));
+
+        var texto15 = "Esse texto é um teste";
+        Console.WriteLine(texto15.Remove(0,1));
+
+        // Length
+        var texto16 = "texto";
+        Console.WriteLine(texto16.Length); // 5 caracteres
+
+        //Manipulando strings
+        //-------------------------------------------------------------
     }
 }
