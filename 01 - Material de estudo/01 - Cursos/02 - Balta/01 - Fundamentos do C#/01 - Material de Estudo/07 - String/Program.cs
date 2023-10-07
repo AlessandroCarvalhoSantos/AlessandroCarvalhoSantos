@@ -1,4 +1,6 @@
-﻿namespace String;
+﻿using System.Text;
+
+namespace String;
 
 class Program
 {
@@ -173,6 +175,16 @@ class Program
         Console.WriteLine(texto20.Trim()); 
         Console.WriteLine(texto20.TrimEnd()); 
         Console.WriteLine(texto20.TrimStart()); 
+
+        
+        //String builder
+        //-------------------------------------------------------------
+
+        var texto21 = new StringBuilder();
+        texto21.Append("Teste");
+        texto21.Append(" de texto");
+
+        Console.WriteLine(texto21.ToString());
 
     }
 }
