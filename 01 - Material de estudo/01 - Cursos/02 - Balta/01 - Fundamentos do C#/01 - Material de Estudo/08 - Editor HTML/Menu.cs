@@ -1,3 +1,6 @@
+using System.Diagnostics;
+using EditorHtml;
+
 namespace EditorHTML;
 
 public static class Menu
@@ -11,6 +14,7 @@ public static class Menu
         WriteOptions();
 
         var option = short.Parse(Console.ReadLine());
+        HandleMenuOption(option);
     }
 
     public static void DrawScreen()
@@ -57,4 +61,25 @@ public static class Menu
         Console.SetCursorPosition(3,10);
         Console.Write("Opção: ");
     }
+
+    public static void HandleMenuOption(short option)
+    {
+        switch(option)
+        {
+            case 1:
+                Editor.Show();
+            break;
+            case 2:
+                
+            break;
+            case 0:
+                Console.Clear();
+                Environment.Exit(0);
+            break;
+            default:
+                Show();
+            break;
+        }
+    }
+
 }
