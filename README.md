@@ -1,6 +1,6 @@
 <img src="./04 - Outros/assets/img/readme/Capa.png" width="100%">
 
-​			Olá pessoal, meu nome é **Alessandro C. Santos**, tenho **23 anos** e estou adentrando na carreira de **desenvolvedor FullStack e designer**, estou me graduando em **Sistema de Informação** no Instituto Federal do Espírito Santo - Campus Cachoeiro de Itapemirim, atualmente **trabalho a mais de 1 ano** na Captar Consultoria Pública,  onde se destaca na **análise, desenvolvimento, manutenção e inovação de produtos internos**, consolidando sua posição como uma empresa líder na prestação de serviços de assistência social para municípios e Estados em todo o Brasil. **Estagiei** na prefeitura municipal de Cachoeiro de Itapemirim **por 1 ano**. Sempre fui aficionado por tecnologia, tenho muito a trilhar, mas já dei meus primeiros passos e construirei uma grande carreira pela frente. 
+Olá pessoal, meu nome é **Alessandro C. Santos**, tenho **23 anos** e estou adentrando na carreira de **desenvolvedor FullStack e designer**, estou me graduando em **Sistema de Informação** no Instituto Federal do Espírito Santo - Campus Cachoeiro de Itapemirim, atualmente **trabalho a mais de 1 ano** na Captar Consultoria Pública,  onde se destaca na **análise, desenvolvimento, manutenção e inovação de produtos internos**, consolidando sua posição como uma empresa líder na prestação de serviços de assistência social para municípios e Estados em todo o Brasil. **Estagiei** na prefeitura municipal de Cachoeiro de Itapemirim **por 1 ano**. Sempre fui aficionado por tecnologia, tenho muito a trilhar, mas já dei meus primeiros passos e construirei uma grande carreira pela frente. 
 
 :pushpin: Atualmente se Especializando no ecossistema .NET e AWS
 
@@ -206,8 +206,6 @@ Nos estados do Espírito Santo e Bahia, o SUAS desempenha um papel fundamental n
 
 :ledger: Bom, se você chegou ate aqui é que você se interessou pelo meu perfil, agradeço por ter lido e abaixo tenho algumas formas de entrar em contato caso tenha interesse para algum trabalho profissional, fique a vontade!
 
-
-
 <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"> (28) 99976-2587
 
 <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"> (28) 99976-2587
@@ -225,8 +223,6 @@ Nos estados do Espírito Santo e Bahia, o SUAS desempenha um papel fundamental n
 <img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white"> Em breve...
 
 <img src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white"> Em breve...
-
-
 
 ------------
 
