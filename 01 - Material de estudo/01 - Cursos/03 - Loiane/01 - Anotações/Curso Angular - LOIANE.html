@@ -1,0 +1,761 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Curso Angular - LOIANE</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="3e2518d4-4af4-404c-ba4c-2f1957007bc2" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🔖</span></div><h1 class="page-title">Curso Angular - LOIANE</h1><p class="page-description"></p></header><div class="page-body"><p id="d35677eb-b6d1-4ec7-bd52-e52cf1f2d214" class="">
+</p><ul id="8d40f661-dbd7-4d74-8657-37255e23d6d5" class="toggle"><li><details open=""><summary>Estudos complementares</summary></details></li></ul><ul id="66c6f468-b538-4fa6-ade8-8eaf1060d10a" class="toggle"><li><details open=""><summary>Introdução</summary><ul id="a86653c6-e065-4f69-a0c5-97451a26f7ae" class="toggle"><li><details open=""><summary>Introdução ao angular</summary><ul id="4973f7ff-23cd-4c92-b28f-d37411e6c6d7" class="bulleted-list"><li style="list-style-type:disc">Apresentação da agenda do curso<ul id="c8feec0e-ea0b-48d2-82ab-d1c5af1b5482" class="bulleted-list"><li style="list-style-type:circle">Introdução</li></ul><ul id="cfde35ad-4cf5-4408-aa8a-0cbe4162f232" class="bulleted-list"><li style="list-style-type:circle">Componentes e templates</li></ul><ul id="5d9eb4b4-9a12-4e54-9cc5-e3ac7472282f" class="bulleted-list"><li style="list-style-type:circle">Data binding</li></ul><ul id="7782c780-b6f2-45f0-9e82-8a2f8d4f968a" class="bulleted-list"><li style="list-style-type:circle">Diretivas</li></ul><ul id="1eaf7786-9562-42ce-accf-bcd0f99a1951" class="bulleted-list"><li style="list-style-type:circle">Serviços</li></ul><ul id="52a67853-23a4-43eb-95dd-45a5b9937c95" class="bulleted-list"><li style="list-style-type:circle">Formulários</li></ul><ul id="0fade57f-1d1d-43d5-9176-f9d0e6ebcfb2" class="bulleted-list"><li style="list-style-type:circle">Roteamento</li></ul><ul id="5e6814a7-d82e-4096-bfd7-0389a307a866" class="bulleted-list"><li style="list-style-type:circle">Integração com servidor</li></ul><ul id="f6792d5d-379a-403e-9a87-f03808a784ad" class="bulleted-list"><li style="list-style-type:circle">CRUD Mestre-Detalhe</li></ul></li></ul><ul id="0fcfbe05-df81-4704-a2ee-e24706be3f0c" class="bulleted-list"><li style="list-style-type:disc">Requisitos básicos para o curso<ul id="bed89540-2e54-461d-98bc-c4a0c30663c5" class="bulleted-list"><li style="list-style-type:circle">HTML</li></ul><ul id="619762ea-f0e3-4d99-9ff6-783dbcccb79a" class="bulleted-list"><li style="list-style-type:circle">CSS</li></ul><ul id="2cd5dd22-7dab-448b-94d9-d8d1d089a421" class="bulleted-list"><li style="list-style-type:circle">JavaScript</li></ul></li></ul><ul id="9fa3b343-9bcf-4e5d-8b4e-3b7bce3cfdae" class="bulleted-list"><li style="list-style-type:disc">Sobre o Angular<ul id="e3896893-8e1b-4fd2-8a99-69496067f6a3" class="bulleted-list"><li style="list-style-type:circle">Documentação<figure id="310f3486-0c41-4557-bba1-26e5ff6c1a7e"><a href="https://angular.io/docs" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Angular</div><div class="bookmark-description">Angular is a platform for building mobile and desktop web applications.     Join the community of millions of developers who build compelling user interfaces with Angular.</div></div><div class="bookmark-href"><img src="https://angular.io/assets/images/favicons/favicon-194x194.png" class="icon bookmark-icon"/>https://angular.io/docs</div></div></a></figure></li></ul><ul id="4e4f7e10-d8f0-40d7-86a3-2dd8d1f6277b" class="bulleted-list"><li style="list-style-type:circle">Criada por um parceria Google + Microsoft</li></ul><ul id="6dd93369-a0d1-484f-94df-97d63cbcd2c3" class="bulleted-list"><li style="list-style-type:circle">Open Source (Código no github)</li></ul><ul id="3d72733a-fe57-48d5-ba87-adb7b1ab31bc" class="bulleted-list"><li style="list-style-type:circle">Foi reescrito depois do angular 1, para adequações do padrão web e web components</li></ul><ul id="d61e9fd3-5611-4642-9856-11839b1b1527" class="bulleted-list"><li style="list-style-type:circle">É uma SPA (Single page aplication)</li></ul><ul id="682c8639-ec0a-4f0e-81da-cd3118b73484" class="bulleted-list"><li style="list-style-type:circle">Ele possui 8 blocos principais<ul id="ea829d2f-3b24-46c8-82a6-b03a9f04a6c3" class="bulleted-list"><li style="list-style-type:square">Componentes<ul id="a6f761cd-b7b5-453e-84aa-1089d2f510b0" class="bulleted-list"><li style="list-style-type:disc">É propriamente a view, o que o usuário vai ver</li></ul><ul id="cad1d26c-1ba7-4454-8063-5dde05011715" class="bulleted-list"><li style="list-style-type:disc">Encapsula o template, metadata</li></ul><ul id="c7a011f7-8982-44cd-9353-639b3ad4145e" class="bulleted-list"><li style="list-style-type:disc">Tudo que temos na aplicação é um componente</li></ul><ul id="92e3b01a-dd1c-40f6-a634-71f8a939f4e3" class="bulleted-list"><li style="list-style-type:disc">Geralmente temos um componente raiz (Root)<ul id="c2d0548d-d92e-43e3-9225-3092990d82ec" class="bulleted-list"><li style="list-style-type:circle">Depois encapsulamos outros componentes e sub componetes</li></ul></li></ul><ul id="61fafb3a-df03-44c2-b89b-498671fbf4ea" class="bulleted-list"><li style="list-style-type:disc">Principal função mostrar os dados, sendo conectado com qualquer linguagem de backe-end</li></ul><ul id="64a66d1c-c9cf-4096-89ca-a4b28e157339" class="bulleted-list"><li style="list-style-type:disc">As regras de negócio não devem ficar no componente e si em uma parte de serviço, onde ele pode ser injetado em outros componentes</li></ul></li></ul><ul id="a52cae4d-8435-4da9-a758-eed98d74de04" class="bulleted-list"><li style="list-style-type:square">Diretivas<ul id="b5ea4e99-0856-461b-8c45-2f9902fdc6cf" class="bulleted-list"><li style="list-style-type:disc">Responsável por modificar elementos DOM e/ ou seu comportamento</li></ul></li></ul><ul id="600e1f5f-33af-409d-9fa0-9d6135d0897e" class="bulleted-list"><li style="list-style-type:square">Roteamento<ul id="cd11e5dd-a4a8-4503-a1b1-8d01198ffd84" class="bulleted-list"><li style="list-style-type:disc">Fazer a navegação entre as páginas</li></ul></li></ul><ul id="bdfd75de-45d5-4571-95f8-0e1ba3e07c9b" class="bulleted-list"><li style="list-style-type:square">Serviços<ul id="74872901-fd5c-4442-8daf-91dac5cd28a7" class="bulleted-list"><li style="list-style-type:disc">Carregar regras e se comunica com nosso front-end</li></ul></li></ul><ul id="df989bcf-9e8a-4f43-b34c-7ecf72ad8c04" class="bulleted-list"><li style="list-style-type:square">Template<ul id="42b80580-845a-4bbc-b4e0-2a03d6e163cb" class="bulleted-list"><li style="list-style-type:disc">Código html que vamos mostrar ao usuário, templates com botões, barras e outros componentes</li></ul></li></ul><ul id="65234ae1-da19-48fe-b9be-703ef4f9cb77" class="bulleted-list"><li style="list-style-type:square">Metadata<ul id="b7decefe-2b3b-4ffb-a014-d6b1fe159765" class="bulleted-list"><li style="list-style-type:disc">Ler a classes e fazer o processamento da mesma</li></ul></li></ul><ul id="a2ad149a-f697-4203-9ca5-b06cdf461b19" class="bulleted-list"><li style="list-style-type:square">Data Binding<ul id="0570d2e3-46a3-4956-9d16-09a83a6ceb8e" class="bulleted-list"><li style="list-style-type:disc">Associações dos dados com os componentes</li></ul></li></ul><ul id="a15a8af6-5d27-41d6-851c-1b74ffa0f512" class="bulleted-list"><li style="list-style-type:square">Injeção Dependência <ul id="67585605-878f-4d99-8590-ed6b7b24c38e" class="bulleted-list"><li style="list-style-type:disc">Injetar serviços em componentes ou outros serviços</li></ul></li></ul></li></ul></li></ul></details></li></ul><ul id="afa25aeb-e6bb-413d-8062-4df0a6f020ab" class="toggle"><li><details open=""><summary>Ambiente de desenvolvimento (Node.js, TypeScript, Angular CLi)</summary><ul id="35465f47-1c7a-4a49-9bc5-787dcd649b42" class="bulleted-list"><li style="list-style-type:disc">Instalar o node.js na ultima versão<ul id="bcf75d65-1be7-4705-8546-4b2d429e160c" class="bulleted-list"><li style="list-style-type:circle">Vem com o npm que vai facilitar a nossa instalação de pacotes e outros arquivos.</li></ul><ul id="23365587-1677-4947-98f5-ef677ca85305" class="bulleted-list"><li style="list-style-type:circle">O npm também é um repositório com vários pacotes para baixar e instalar</li></ul></li></ul><ul id="d5b0cf5f-86eb-43b2-8b73-f200a480421f" class="bulleted-list"><li style="list-style-type:disc">Vamos instalar também o typescript<ul id="320eef7e-9b13-4c6c-b4fb-5e7645504fe6" class="bulleted-list"><li style="list-style-type:circle">Podemos usar o seguinte comando para instalar o typescript<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="10b97ca8-7217-440b-9032-53916b19ca6f" class="code"><code class="language-C#">npm install -g typescript //instalar a versão mais atual do typescript
+tsc --version // Verifica a versão do typescript instalado</code></pre></li></ul><ul id="d8cfd2ab-5c71-480a-a26a-3fec715b664c" class="bulleted-list"><li style="list-style-type:circle">Caso não consiga executar comando com power shell, pode tirar as politicas de execução por um momento<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="875764fa-de1a-4083-ad5a-28a2ca0b120e" class="code"><code class="language-C#">Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+</code></pre><ul id="705ef875-8ce6-4eea-905e-5eaa2a4b0a9b" class="bulleted-list"><li style="list-style-type:square">Por segurança volte ao normal<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="d0c620bc-bb64-4b69-bb13-b31d10e42d4f" class="code"><code class="language-C#">Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Default</code></pre></li></ul></li></ul></li></ul><ul id="5a466c15-30b3-4517-81e5-66567e25e293" class="bulleted-list"><li style="list-style-type:disc">Vamos utilizar o typescript para programar, ele é uma linguagem transpilada onde no final vai gerar um arquivo js<ul id="ccc44a5d-3b06-4cbf-9f41-e42c6b7e3154" class="toggle"><li><details open=""><summary>TypeScript</summary><p id="e1239e1e-85ff-4087-b66b-eed33a02e93e" class="">TypeScript é uma linguagem de programação de código aberto desenvolvida e mantida pela Microsoft. É um superset sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem. TypeScript foi projetado para o desenvolvimento de aplicações grandes e transcompila para JavaScript. Como o JavaScript, TypeScript pode ser usado para desenvolver aplicações frontend e backend (usando ambientes como Node.js).</p><p id="4113d6b5-2dbe-48ce-b90d-fa0255288769" class="">Algumas características chave do TypeScript incluem:</p><ol type="1" id="b326f51f-8807-4a2a-9140-072d569138e3" class="numbered-list" start="1"><li><strong>Tipagem Estática e Inferência de Tipo</strong>: O TypeScript permite que os desenvolvedores especifiquem tipos de variáveis, funções, objetos, etc. Isso não é apenas útil para a prevenção de erros, mas também melhora a legibilidade do código e a produtividade do desenvolvedor. Além disso, o TypeScript é capaz de inferir tipos em muitos casos, o que significa que nem sempre é necessário anotar tipos explicitamente.</li></ol><ol type="1" id="a92d5288-f1ca-471e-a56b-4879fc68de01" class="numbered-list" start="2"><li><strong>Compatibilidade com JavaScript</strong>: Todo código JavaScript é válido em TypeScript, o que significa que é relativamente fácil converter um projeto JavaScript existente para TypeScript ou integrar TypeScript em um projeto JavaScript existente.</li></ol><ol type="1" id="a6cf4639-d7f5-4a7f-a4fc-0ec76f35e83b" class="numbered-list" start="3"><li><strong>Suporte a Ferramentas Avançadas</strong>: Devido à sua natureza tipada, o TypeScript oferece melhores ferramentas para refatoração, navegação no código e auto-completar em editores de código como Visual Studio Code.</li></ol><ol type="1" id="200e1b07-c251-4436-ae23-bbc4cfe1626f" class="numbered-list" start="4"><li><strong>Classes e Interfaces</strong>: TypeScript suporta recursos modernos de programação orientada a objetos, como classes, interfaces e módulos. Isso ajuda a estruturar o código de forma mais eficiente e clara, especialmente em projetos maiores.</li></ol><ol type="1" id="109690e3-2a97-4d0e-8be8-09b1aa723c99" class="numbered-list" start="5"><li><strong>Compatibilidade com Navegadores e Ambientes Node.js</strong>: Código TypeScript é transcompilado para JavaScript, tornando-o compatível com navegadores da web e o ambiente Node.js.</li></ol><ol type="1" id="20323463-6417-40e0-8697-22bff985aeae" class="numbered-list" start="6"><li><strong>Suporte a Decoradores e Mixins</strong>: TypeScript oferece suporte a recursos avançados de programação, como decoradores e mixins, que podem ser usados para modificar o comportamento de classes e métodos de maneira declarativa.</li></ol><ol type="1" id="10de658c-804b-493d-ad3f-b682e034099c" class="numbered-list" start="7"><li><strong>Comunidade e Ecossistema</strong>: Sendo uma extensão do JavaScript, TypeScript se beneficia de um ecossistema rico e uma comunidade ativa de desenvolvedores.</li></ol><p id="54baacdf-95c3-4f53-87d3-1b2e94354d4a" class="">O TypeScript é especialmente popular em projetos que começam a escalar em tamanho e complexidade, onde a tipagem estática pode ajudar a gerenciar e minimizar erros, melhorar a manutenção do código e facilitar a colaboração entre desenvolvedores.</p></details></li></ul></li></ul><ul id="10f51b15-4c2d-4616-ab08-4357d4c7481a" class="bulleted-list"><li style="list-style-type:disc">Oferece suporte amplo ao ECMAScript 6</li></ul><ul id="00d1b07f-e905-4113-8554-cceb4e1ee263" class="bulleted-list"><li style="list-style-type:disc">Vamos instalar o angular cli também<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="fe3f03ab-8dca-4a3c-bf50-d895766206a1" class="code"><code class="language-C#">npm install -g @angular/cli //Instalar o angular-cli
+
+ng version // Exibe a versão do angular</code></pre><ul id="33de0e9b-6960-478c-9ca9-1e2b84ffa97a" class="bulleted-list"><li style="list-style-type:circle">Agora usamos o ng para executar comandos do angular</li></ul><ul id="7094f7e2-c9b0-4fe0-a462-0b51148689a7" class="toggle"><li><details open=""><summary>Angular-CLI</summary><p id="bca6f011-f92d-4ddc-95fb-374986aa1c9f" class="">O Angular CLI (Command Line Interface) é uma ferramenta poderosa e essencial para desenvolver aplicações utilizando o framework Angular, mantido pela equipe do Google. O Angular CLI simplifica e agiliza muitos processos de desenvolvimento, desde a criação inicial de um projeto até a sua otimização e implantação.</p><p id="91b84259-ce5e-44c3-9280-5c44efaaa703" class="">Principais funcionalidades do Angular CLI incluem:</p><ol type="1" id="2ac9f3eb-09d5-4506-a5b8-89b2511e719a" class="numbered-list" start="1"><li><strong>Criação de Projetos</strong>: Facilita a criação de novos projetos Angular com uma estrutura de diretórios padrão e configurações básicas já implementadas.</li></ol><ol type="1" id="8b736a1a-3160-4586-893b-2834bc770181" class="numbered-list" start="2"><li><strong>Geração de Código</strong>: Permite gerar componentes, serviços, classes, diretivas, pipes, e outras entidades Angular com linhas de comando simples. Isso ajuda a seguir as boas práticas e a manter a consistência do código.</li></ol><ol type="1" id="7fdca05f-d001-423f-b214-1e262bb2aa66" class="numbered-list" start="3"><li><strong>Servidor de Desenvolvimento</strong>: Oferece um servidor de desenvolvimento local com hot reload, o que significa que as alterações feitas no código são automaticamente refletidas no navegador sem a necessidade de recarregar a página.</li></ol><ol type="1" id="6617b183-05d7-4013-9236-bc7d0522debf" class="numbered-list" start="4"><li><strong>Build e Otimização</strong>: Compila e otimiza o projeto Angular para produção, incluindo a minificação de arquivos, otimização de assets, e geração de bundles.</li></ol><ol type="1" id="715640b3-7d22-46bd-8fad-b1113b7f45b7" class="numbered-list" start="5"><li><strong>Testes</strong>: Facilita a execução de testes unitários e testes end-to-end (E2E) com frameworks como Jasmine e Protractor.</li></ol><ol type="1" id="acf8a6da-0b0a-4a71-9a65-7a12bb03ae1e" class="numbered-list" start="6"><li><strong>Linting</strong>: Integra ferramentas de linting como TSLint para ajudar a manter a qualidade do código e seguir as convenções de codificação.</li></ol><ol type="1" id="6d305df1-aa97-4559-bb61-0b0b0221ee13" class="numbered-list" start="7"><li><strong>Atualização Automática</strong>: Permite atualizar facilmente um projeto Angular para a versão mais recente do framework.</li></ol><ol type="1" id="1ed32350-3845-4c0f-8847-9eddd0a21c76" class="numbered-list" start="8"><li><strong>Suporte a Extensões</strong>: Permite adicionar e gerenciar extensões (Angular Schematics) que podem adicionar funcionalidades adicionais ao seu projeto Angular.</li></ol><p id="26729081-eaf2-4637-8ab1-6e82056b9a2e" class="">Para começar a usar o Angular CLI, primeiro você precisa ter o Node.js instalado em seu sistema. Depois disso, você pode instalar o Angular CLI globalmente usando o npm (Node Package Manager) com o seguinte comando:</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="2d4594eb-11c3-43c4-9de5-babe637122cb" class="code"><code class="language-Shell" style="white-space:pre-wrap;word-break:break-all">npm install -g @angular/cli
+</code></pre><p id="59e42064-bde7-4e06-8499-7db8b4face9d" class="">Uma vez instalado, você pode criar um novo projeto Angular com o comando:</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="a38a2051-7f48-4459-aa3b-440057022dbc" class="code"><code class="language-Shell" style="white-space:pre-wrap;word-break:break-all">ng new nome-do-projeto
+</code></pre><p id="b377566d-196f-4d9d-9a3f-09b6ee1c6fd6" class="">E iniciar um servidor de desenvolvimento com:</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="54dfb608-b023-4e8f-96dc-1e54cd2c7dba" class="code"><code class="language-Shell" style="white-space:pre-wrap;word-break:break-all">cd nome-do-projeto
+ng serve
+</code></pre><p id="dc848c2b-9ac4-4495-95f6-32161c8edc9d" class="">Isso iniciará um servidor local e abrirá o projeto Angular no navegador, geralmente em <code>http://localhost:4200</code>.</p><p id="1a40a0fd-4225-4daf-9401-c3e4ca51ed02" class="">O Angular CLI é uma ferramenta indispensável para desenvolvedores Angular, simplificando muitos processos e melhorando a eficiência e qualidade do desenvolvimento de aplicações Angular.</p></details></li></ul></li></ul><ul id="f62aeca6-5bac-4579-972a-112ca401a5b7" class="bulleted-list"><li style="list-style-type:disc">Instalar algum editor de código, que de preferência suporte o typescript<ul id="1f11578d-95ef-45fa-b230-1bc22d9068f0" class="bulleted-list"><li style="list-style-type:circle">Visual Studio Code</li></ul><ul id="544874f7-0f39-4426-a27c-c7c7baec7f3b" class="bulleted-list"><li style="list-style-type:circle">WebStorm</li></ul><ul id="c72208e2-6442-4d7f-b49b-4917eb339a24" class="bulleted-list"><li style="list-style-type:circle">Atom</li></ul><ul id="d9394506-5e4c-4e10-a4ad-efef0edc4255" class="bulleted-list"><li style="list-style-type:circle">Sublime Text</li></ul></li></ul></details></li></ul><ul id="03b51700-9a7e-4f76-a422-3f50eba9bcd8" class="toggle"><li><details open=""><summary>Hello, World! Criando primeiro projeto e o primeiro componente</summary><ul id="0aec602e-652b-42ed-9b76-7ff8d9672908" class="bulleted-list"><li style="list-style-type:disc">Vamos agora criar um projeto básico para começar<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="a84cce70-4e8b-48f4-a2c2-83e6662adc8a" class="code"><code class="language-C#">ng new nome-projeto</code></pre><ul id="8b2acaa1-8a33-47d9-ad31-a1f925b2284b" class="bulleted-list"><li style="list-style-type:circle">O nome do projeto deve começar com uma letra/número pelo menos sendo o comando mais básico</li></ul></li></ul><ul id="5c36fb74-554f-4863-9ee1-949c0ce9aa4b" class="bulleted-list"><li style="list-style-type:disc">Podemos passar configurações como parâmetro para configurar nosso projeto <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="00182f15-7792-4188-98f3-0dbbebc4511f" class="code"><code class="language-C#">ng new my-app --no-standalone --routing --ssr=false</code></pre><p id="b9628ea0-29d8-42ff-bb65-fd0a2e05aa31" class="">O comando <code>ng new my-app --no-standalone --routing --ssr=false</code> é utilizado para criar um novo projeto Angular com configurações específicas. Vou explicar cada parte do comando:</p><ol type="1" id="2cb838ea-c091-4769-b6cd-4335686f3106" class="numbered-list" start="1"><li><code><strong>ng new my-app</strong></code>:<ul id="8df01273-b92f-446b-a10e-492aeb68fd3a" class="bulleted-list"><li style="list-style-type:disc"><code>ng</code> é o Angular CLI, a ferramenta de linha de comando para Angular.</li></ul><ul id="f950b3e5-0324-415a-9439-429eac6feb6e" class="bulleted-list"><li style="list-style-type:disc"><code>new</code> é o comando usado para criar um novo projeto Angular.</li></ul><ul id="4d0066e7-16f2-4eb2-a3ba-28ee66aa9e9f" class="bulleted-list"><li style="list-style-type:disc"><code>my-app</code> é o nome do novo projeto que será criado. Você pode substituir <code>my-app</code> por qualquer outro nome que desejar para seu projeto.</li></ul></li></ol><ol type="1" id="4dbcb149-1853-454b-9004-ee153792f6d7" class="numbered-list" start="2"><li><code><strong>-no-standalone</strong></code>:<ul id="7ebd0485-9fe9-4840-b8b4-a29c9c6e6e19" class="bulleted-list"><li style="list-style-type:disc">Esta opção indica que o projeto não deve ser configurado para usar componentes independentes (&quot;standalone components&quot;). Os componentes independentes são uma funcionalidade que permite criar componentes Angular que não dependem de um módulo Angular. No entanto, essa funcionalidade pode ainda estar em desenvolvimento ou experimental, e a flag <code>-no-standalone</code> é usada para desativá-la.</li></ul></li></ol><ol type="1" id="0c282d35-4830-42c9-9ddc-e0397eac5ebe" class="numbered-list" start="3"><li><code><strong>-routing</strong></code>:<ul id="0f471dff-25e2-47a1-80c1-3095af027b71" class="bulleted-list"><li style="list-style-type:disc">Esta opção adiciona suporte para roteamento no aplicativo Angular. O Angular CLI irá configurar um módulo de roteamento (<code>AppRoutingModule</code>) para o projeto. Este módulo é usado para definir as rotas de navegação dentro da aplicação, permitindo a navegação entre diferentes componentes/views.</li></ul></li></ol><ol type="1" id="4aa99fa5-623c-4f65-94c8-dd991af9b086" class="numbered-list" start="4"><li><code><strong>-ssr=false</strong></code>:<ul id="c8870cbb-033f-4309-a677-54a5dea7fc1b" class="bulleted-list"><li style="list-style-type:disc">SSR significa Server-Side Rendering (Renderização no Lado do Servidor).</li></ul><ul id="8679bbd8-7519-4386-a0a0-fcf6d73300a6" class="bulleted-list"><li style="list-style-type:disc"><code>-ssr=false</code> especifica que o projeto não deve ser configurado com suporte para SSR. A renderização no lado do servidor é uma técnica usada para melhorar o desempenho e a otimização para motores de busca, renderizando a aplicação Angular no servidor antes de enviá-la para o navegador. Ao definir como <code>false</code>, você está escolhendo não utilizar essa funcionalidade e manter toda a renderização no lado do cliente (navegador).</li></ul></li></ol><p id="38320172-c735-4c59-b7fc-1c8e8a7b5696" class="">Resumindo, o comando <code>ng new my-app --no-standalone --routing --ssr=false</code> cria um novo projeto Angular chamado <code>my-app</code>, sem a configuração de componentes independentes, com um módulo de roteamento configurado, e sem suporte para renderização no lado do servidor.</p></li></ul><ul id="ddfd1996-e2a5-42a7-ab0e-ab3773cc41c8" class="bulleted-list"><li style="list-style-type:disc">Depois ela vai instalar os pacotes necessários e criar o projeto para a gente.</li></ul><ul id="e88154e8-d372-4b7f-aa76-d71e06667876" class="bulleted-list"><li style="list-style-type:disc">Antes de começar vamos instalar uma extensão no vscode, que é a extensão do angular. Que facilita a programação em angular.</li></ul><ul id="4c2a57d9-f275-4aae-af69-718dc3625556" class="bulleted-list"><li style="list-style-type:disc">Depois de instalado podemos ver algumas pasta e arquivos<ul id="4c2f8c11-5cbf-48b5-bf5e-8c5ab82dd446" class="bulleted-list"><li style="list-style-type:circle">O node_modules é aonde fica armazenada as dependências do nosso projeto</li></ul><ul id="cbcd33de-ee8f-4ca3-b40c-5173b4f5d193" class="bulleted-list"><li style="list-style-type:circle">No arquivo package.json temos todas as bibliotecas e dependências configuradas e instaladas no nosso projeto. Onde temos para desenvolvimento ou para rodar nosso projeto</li></ul><ul id="f96b5c70-59a5-4917-bc2e-ca13ed3f0be3" class="bulleted-list"><li style="list-style-type:circle">E temos a pasta src aonde vamos programar nosso projeto e dentro dela temos o app que vamos configurar os arquivos e templates</li></ul></li></ul><ul id="0abd0c7b-ab60-41cd-8daf-e4dfba99b377" class="bulleted-list"><li style="list-style-type:disc">Essas pasta são as básicas do nosso projeto.</li></ul><ul id="9f229444-1bd8-4e38-b69b-29e6388c0922" class="bulleted-list"><li style="list-style-type:disc">Agora vamos rodar o projeto com esse código<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="d7e302a7-2b5d-4844-96c5-b23ff4157429" class="code"><code class="language-C#">ng serve</code></pre><ul id="ca604459-5bea-491b-be6b-fc6e35d0d414" class="bulleted-list"><li style="list-style-type:circle">Depois ele “compila” nosso projeto e abre um servidor local para a gente na url<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="f909f77e-ee85-4df6-a815-d5230a7ee742" class="code"><code class="language-C#">http://localhost:4200</code></pre></li></ul><ul id="1b7eafa2-97fa-4cab-8d24-6bc3c7ecbe98" class="bulleted-list"><li style="list-style-type:circle">O console de desenvolvedor do chrome é uma ótima ferramenta para debugar códigos do angular,</li></ul><ul id="0fb05d56-85f3-4aee-896e-b8fc9c0c495f" class="bulleted-list"><li style="list-style-type:circle">O angular cli faz build automáticamente a toda vez que é feita alguma alteração no nosso código.</li></ul></li></ul><ul id="5c77f547-8a38-4700-925d-164e8737b45b" class="bulleted-list"><li style="list-style-type:disc">O angular tem um cara chamado style-guid, comando de boas práticas de código do angular<figure id="d4c930a8-b177-473e-bd8c-7724cc7f4a2f"><a href="https://angular.io/guide/styleguide" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Angular</div><div class="bookmark-description">Angular is a platform for building mobile and desktop web applications.     Join the community of millions of developers who build compelling user interfaces with Angular.</div></div><div class="bookmark-href">https://angular.io/guide/styleguide</div></div></a></figure></li></ul><ul id="132371b7-1112-40f8-9cd0-e316b5b9257b" class="bulleted-list"><li style="list-style-type:disc">Agora vamos criar um pequeno componente para exemplificar.<ul id="605dab7c-f257-405c-af3a-db0faa8efbff" class="bulleted-list"><li style="list-style-type:circle">Dentro da pasta app vamos criar uma pasta chamada “meu-primeiro”<ul id="bc96cf6d-d048-4794-8a03-8e267a9ecb65" class="bulleted-list"><li style="list-style-type:square">Quando a palavra é composta podemos separa-la com -</li></ul></li></ul><ul id="e557f206-20b6-4c5f-a4a1-f4b6d1dbcd2b" class="bulleted-list"><li style="list-style-type:circle">Dentro vamos criar um arquivo chamado meu-primeiro.component.ts<ul id="ee423f88-963c-4b9e-b7f4-8ed67dfc205e" class="bulleted-list"><li style="list-style-type:square">Nesse caso aqui colocamos o nome do arquivo com “meu-primeiro”</li></ul><ul id="8d046e8c-1ccf-4095-a0c6-eeba57507a32" class="bulleted-list"><li style="list-style-type:square">Depois colocamos um diretiva, que nesse caso é o .component e depois o tipo do arquivo .ts</li></ul></li></ul><ul id="9fbefa46-bffb-4b2b-b2f2-3b279d4cdc82" class="bulleted-list"><li style="list-style-type:circle">Agora vamos criar uma classe<ul id="15b37002-fe44-4a75-82a3-75cbf1bb8572" class="bulleted-list"><li style="list-style-type:square">Utilize CamelCase para nomear os nomes das classe e tente colocar sempre o mesmo nome do arquivo e uma classe por arquivo</li></ul><ul id="b0efa79f-32c1-4940-8790-8f6abffc4147" class="bulleted-list"><li style="list-style-type:square">Depois que criamos uma classe precisamos criar um decorator que é semelhante a anotation do C#, ele serve para dizer que agora esse componente é do angular, passamos informações adicionais para o compilador.</li></ul><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="b2b5a4bb-bbc6-4d99-81bd-3468cb84ca8e" class="code"><code class="language-C#">import { Component } from &quot;@angular/core&quot;;
+
+@Component({})
+class MeuPrimeiroComponent{}</code></pre><ul id="ca78dcdc-62b0-4d0b-ab96-5ba2142081e5" class="bulleted-list"><li style="list-style-type:square">Vamos a uma explicação desse código<p id="ffea34dc-e69b-4447-9686-a3638d57d812" class="">O código é um exemplo básico de como definir um componente no Angular utilizando TypeScript. Vamos analisar cada parte do código:</p><ol type="1" id="6bef2a40-63aa-45c6-99c6-3e119353a90a" class="numbered-list" start="1"><li><code><strong>import { Component } from &quot;@angular/core&quot;;</strong></code><ul id="4611dcc5-ad40-4fbe-a452-8a1e06a5727c" class="bulleted-list"><li style="list-style-type:disc">Esta linha importa o decorador <code>Component</code> do pacote <code>@angular/core</code>, que é um dos pacotes principais do Angular. Os decoradores são funções especiais que modificam classes em JavaScript/TypeScript. No Angular, o decorador <code>Component</code> é usado para definir uma classe como um componente Angular, o que permite adicionar funcionalidades específicas de componentes a essa classe.</li></ul></li></ol><ol type="1" id="1259b8d9-ccc6-4b1d-afba-535eb7a614f7" class="numbered-list" start="2"><li><code><strong>@Component({})</strong></code><ul id="a33ba0ee-3dad-4d1f-ad40-52f2f8441178" class="bulleted-list"><li style="list-style-type:disc">Aqui, o decorador <code>Component</code> é aplicado à classe <code>MeuPrimeiroComponent</code>. O decorador <code>Component</code> recebe um objeto de configuração que define propriedades importantes do componente. Este objeto é vazio no exemplo (<code>{}</code>), mas normalmente inclui propriedades como:<ul id="411555fd-8aa8-48ae-8c2b-eea2024feaf8" class="bulleted-list"><li style="list-style-type:circle"><code>selector</code>: uma string que define o nome da tag HTML que representa o componente. Por exemplo, se você definir <code>selector: &#x27;meu-primeiro-componente&#x27;</code>, poderá usar <code>&lt;meu-primeiro-componente&gt;&lt;/meu-primeiro-componente&gt;</code> em seu HTML para renderizar este componente.</li></ul><ul id="90a70408-5d6b-45c7-b640-be67928cd46a" class="bulleted-list"><li style="list-style-type:circle"><code>templateUrl</code>: o caminho para um arquivo HTML que contém o layout do componente.</li></ul><ul id="dddf3313-0a5a-4ac7-8aa3-eaa8fc5f74bb" class="bulleted-list"><li style="list-style-type:circle"><code>template</code>: uma string que contém o layout HTML diretamente.<ul id="0bad8f50-c5ee-40c3-8fcd-1362878dff7c" class="bulleted-list"><li style="list-style-type:square">Podemos usar de forma literal e quebrando as linhas usando a crase ` `</li></ul></li></ul><ul id="3d0a4b3b-bf1e-4b89-b50e-3f72dd1fbe02" class="bulleted-list"><li style="list-style-type:circle"><code>styleUrls</code>: um array de caminhos para arquivos CSS que estilizam este componente.</li></ul><ul id="9ddc4290-f4fa-4807-a833-6daba2d6132d" class="bulleted-list"><li style="list-style-type:circle"><code>styles</code>: um array de strings contendo estilos CSS diretamente.</li></ul></li></ul></li></ol><ol type="1" id="9227e2bf-eee5-40e8-bfe1-d333373adf4a" class="numbered-list" start="3"><li><code><strong>class MeuPrimeiroComponent{}</strong></code><ul id="747f0b8e-5e99-477d-a15f-d7225a599549" class="bulleted-list"><li style="list-style-type:disc">Esta é a definição da classe do componente. <code>MeuPrimeiroComponent</code> é o nome da classe do componente. Dentro das chaves <code>{}</code> você pode definir propriedades, métodos e outras lógicas que pertencem ao componente. No seu exemplo, a classe está vazia, sem propriedades ou métodos.</li></ul><p id="fb88f710-5781-40a1-a73c-8058590a1ab4" class="">Para que o componente seja funcional, você normalmente adicionaria pelo menos um <code>selector</code> e um <code>template</code> (ou <code>templateUrl</code>) à configuração do <code>Component</code>. Aqui está um exemplo de como o código poderia ser expandido:</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="315fec32-db50-4396-806c-4a0e5ce77b73" class="code"><code class="language-TypeScript" style="white-space:pre-wrap;word-break:break-all">import { Component } from &quot;@angular/core&quot;;
+
+@Component({
+  selector: &#x27;meu-primeiro-componente&#x27;,
+  templateUrl: &#x27;./meu-primeiro-componente.component.html&#x27;,
+  styleUrls: [&#x27;./meu-primeiro-componente.component.css&#x27;]
+})
+class MeuPrimeiroComponent {
+  // Propriedades e métodos do componente
+}
+</code></pre><p id="5fa54fd5-4076-4e66-9913-a69949cc51ce" class="">Este exemplo definiria um componente com um seletor personalizado, um arquivo HTML externo para o template, e um arquivo CSS para estilos. Este componente poderia então ser usado em outros templates de componentes ou no HTML principal da aplicação Angular.</p></li></ol><ul id="330f34b8-4f7c-4a1b-b77f-44c97dd0ba32" class="bulleted-list"><li style="list-style-type:disc">Agora vamos colocar nosso primeiro componente na parte principal e no arquivo chamado app.component.html<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="9f80b3fb-4cf4-45e0-9b48-1a45477359a6" class="code"><code class="language-C#">&lt;meu-primeiro-component&gt;&lt;/meu-primeiro-component&gt;</code></pre></li></ul><ul id="0d305e10-6d86-4ac1-a43c-ff8e032d208b" class="bulleted-list"><li style="list-style-type:disc">Depois precisamos deixar nossa classe publica para exportação, utilizamos export na nossa configuração.<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="75c05577-8cf6-4f34-8f49-c4026ba45502" class="code"><code class="language-C#">import { Component } from &quot;@angular/core&quot;;
+
+@Component({
+    selector:&quot;meu-primeiro-component&quot;,
+    template: `
+        &lt;p&gt;Meu Primeiro Component do Angular 2&lt;/p&gt;
+    `
+})
+export class MeuPrimeiroComponent{}</code></pre></li></ul><ul id="77a3b030-7152-4e0a-9ea4-a139a010e12a" class="bulleted-list"><li style="list-style-type:disc">Agora precisamos expor ela globalmente, para isso vamos no arquivo app.module.ts e adicionar nosso componente lá<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="6c1f8b85-5d9b-488c-9d90-66027dde19c0" class="code"><code class="language-TypeScript">import { NgModule } from &#x27;@angular/core&#x27;;
+import { BrowserModule } from &#x27;@angular/platform-browser&#x27;;
+
+import { AppRoutingModule } from &#x27;./app-routing.module&#x27;;
+import { AppComponent } from &#x27;./app.component&#x27;;
+
+import { MeuPrimeiroComponent } from &quot;./meu-primeiro/meu-primeiro.component&quot;; // Importando o componente (Não precisa da extensão final do arquivo)
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    MeuPrimeiroComponent // Declarando nosso componente para ser visível globalmente
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }</code></pre></li></ul></li></ul><ul id="6fcdbea8-06fb-4475-8923-509cf6481e33" class="bulleted-list"><li style="list-style-type:square">Depois vai ficar mais fácil criar  componentes pelo cli, aqui vimos a parte mais bruta e as nomenclaturas usadas para criar um componente básico.</li></ul></li></ul><ul id="58763a77-13dc-4124-8a68-f4a79ccf83bd" class="bulleted-list"><li style="list-style-type:circle">Agora vamos usar o angular cli para criar um componente.<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1430e3af-ddad-43db-b9f8-f6874c0e1a02" class="code"><code class="language-C#">ng g compenent meu-primeiro2
+ng g c meu-primeiro2   //Forma reduzida
+</code></pre><ul id="7d89d33d-1db7-4a89-bf3f-ab1176b1771d" class="bulleted-list"><li style="list-style-type:square">Esse comando facilita nossa vida ele criar todo aquele processo de componente para a a gente de forma completa</li></ul><ul id="a013defc-d3df-4fa6-8f6a-1e21aeb4ddba" class="bulleted-list"><li style="list-style-type:square">Ele cria uma pasta, e os arquivos para o componente, com os arquivos <ul id="52b205ab-8601-4cfc-89c1-7433d761aa2b" class="bulleted-list"><li style="list-style-type:disc">meu-primeiro2.component.css → css do componente</li></ul><ul id="28364b48-60ec-4c6a-bbfa-1b623b184348" class="bulleted-list"><li style="list-style-type:disc">meu-primeiro2.component.html → html do componente</li></ul><ul id="cea6b58a-e5a5-4b55-b024-c5584353066b" class="bulleted-list"><li style="list-style-type:disc">meu-primeiro2.component.spec.ts → typescript para testes<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="8f09c62f-fa1c-4cde-ac4e-3fe1d578d7d7" class="code"><code class="language-TypeScript">import { ComponentFixture, TestBed } from &#x27;@angular/core/testing&#x27;;
+
+import { MeuPrimeiro2Component } from &#x27;./meu-primeiro2.component&#x27;;
+
+describe(&#x27;MeuPrimeiro2Component&#x27;, () =&gt; {
+  let component: MeuPrimeiro2Component;
+  let fixture: ComponentFixture&lt;MeuPrimeiro2Component&gt;;
+
+  beforeEach(async () =&gt; {
+    await TestBed.configureTestingModule({
+      declarations: [MeuPrimeiro2Component]
+    })
+    .compileComponents();
+    
+    fixture = TestBed.createComponent(MeuPrimeiro2Component);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it(&#x27;should create&#x27;, () =&gt; {
+    expect(component).toBeTruthy();
+  });
+});</code></pre></li></ul><ul id="5897d91d-f60f-4ad7-9298-735e15a0a1f8" class="bulleted-list"><li style="list-style-type:disc">meu-primeiro2.component.ts → classe em typescript<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="eb040c80-717f-4f7e-9808-1723719519de" class="code"><code class="language-TypeScript">import { Component } from &#x27;@angular/core&#x27;;
+
+@Component({
+  selector: &#x27;app-meu-primeiro2&#x27;,
+  templateUrl: &#x27;./meu-primeiro2.component.html&#x27;,
+  styleUrl: &#x27;./meu-primeiro2.component.css&#x27;
+})
+export class MeuPrimeiro2Component {
+
+}</code></pre></li></ul></li></ul><ul id="6473f3d3-49c4-4b17-be13-55be4519ab81" class="bulleted-list"><li style="list-style-type:square">Ele também atualiza a exposição do nosso arquivo no app.module.ts</li></ul></li></ul></li></ul></details></li></ul><ul id="32c2f733-6b11-49d2-8266-61fd6e7bb38d" class="toggle"><li><details open=""><summary>Introdução ao typescript para angular</summary><p id="71805667-c5f4-432a-a451-f0247813009f" class="">
+</p></details></li></ul><ul id="a6751824-022c-4db5-ad3d-3740f1cab53f" class="toggle"><li><details open=""><summary>Módulos (ngModule)</summary></details></li></ul><ul id="bd4ef16e-e2cd-45f4-90e1-8d035137761e" class="toggle"><li><details open=""><summary>Templates</summary></details></li></ul><ul id="dbbe423b-8c32-4e74-ac27-52ee6b0fc519" class="toggle"><li><details open=""><summary>Serviços (Services) e Injeção de dependência (DI)</summary></details></li></ul><ul id="4d606218-daa0-418d-95a7-eafdb803afda" class="toggle"><li><details open=""><summary>Dicas plugins Angular para atom e vscode</summary></details></li></ul></details></li></ul><ul id="914a0334-a8c9-43a7-9e08-763d880655ad" class="toggle"><li><details open=""><summary>Data binding</summary><ul id="20f5c9c1-b6db-426f-bf6c-f1250e9b34e3" class="toggle"><li><details open=""><summary>Property Binding e interpolação</summary></details></li></ul><ul id="1da42933-0cb1-4d4d-9f30-d8b407adfd78" class="toggle"><li><details open=""><summary>Class e style binding</summary></details></li></ul><ul id="cdbbc6e2-60d8-4397-8213-09eeeff7c686" class="toggle"><li><details open=""><summary>Event binding</summary></details></li></ul><ul id="ac677770-2d79-4092-b136-c0f0b41f9773" class="toggle"><li><details open=""><summary>Two-way data binding</summary></details></li></ul><ul id="64aa760c-285c-40a1-93b2-9951fe6eb962" class="toggle"><li><details open=""><summary>input properties</summary></details></li></ul><ul id="b834991b-88c6-4460-997e-941e1972878f" class="toggle"><li><details open=""><summary>Ciclo de vida (life-cycle) do componente</summary></details></li></ul><ul id="7956c733-721b-466e-8604-b12fd20f1038" class="toggle"><li><details open=""><summary>Acesso ao DOM e ao template com ViewChild</summary></details></li></ul></details></li></ul><ul id="0cf4085d-a5cb-4098-8b28-c75ffe83a9a5" class="toggle"><li><details open=""><summary>Angular CLI </summary><ul id="6a938327-f8f8-47d8-ada1-ddfe08950e92" class="toggle"><li><details open=""><summary>Angular CLI: instalação e criação de projetos ng new e ng serve</summary></details></li></ul><ul id="f4d5bfab-78b9-4c2d-9247-8d3a555e425a" class="toggle"><li><details open=""><summary>Angular CLI: Criando components, services, ng generate</summary></details></li></ul><ul id="4f666aa9-588a-462a-86fc-19de9bf0f89f" class="toggle"><li><details open=""><summary>Angular CLI: Usando pré-processadores (Sass, less, Stylus)</summary></details></li></ul><ul id="f970763d-902e-4588-9891-b8932d602d3a" class="toggle"><li><details open=""><summary>Angular CLI: ng lint, ng teste e ng e2e</summary></details></li></ul><ul id="2ec7904d-c80f-44b2-8e41-c21c2d1300dd" class="toggle"><li><details open=""><summary>Angular CLI: Estrutura do projeto</summary></details></li></ul><ul id="9d58be71-1dcf-439a-8277-0ff85faa518b" class="toggle"><li><details open=""><summary>Angular CLI: Gerando build de produção</summary></details></li></ul><ul id="f8033057-0a13-4d6b-945e-09167ec3c7a6" class="toggle"><li><details open=""><summary>Angular CLI: Instalando bibliotecas (bootstrap, jquery, materialize, lodash)</summary></details></li></ul></details></li></ul><p id="923865e6-a6b0-401c-a28c-7e20543ff2e8" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

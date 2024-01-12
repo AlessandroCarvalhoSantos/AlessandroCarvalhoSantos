@@ -1,0 +1,21 @@
+Curso Angular V2 
+Ano: 2017
+Carga Horária: 28 horas e 13 minutos
+Aulas: 155 Aulas
+
+OBS: O curso é bem antigo, mas tem uma ótima didática e relevância, vamos atualizar conforme estudando.
+
+Módulos:
+	Introdução - 8 aulas
+	Data binding - 8 aulas
+	Angular CLI - 8 aulas
+	Diretivas - 13 aulas
+	Serviços - 6 aulas
+	Pipes (Filtros) - 6 aulas
+	Rotas - 23 aulas
+	Formulários (Template Driven) - 16 aulas
+	Formulários reativos (data-driven) - 29 aulas
+	Http - 28 aulas
+	Depuração/debug - 2 aulas
+	Build e deploy - 9 aulas 
+	
